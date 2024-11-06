@@ -1,6 +1,6 @@
 # Fullstack Java Project
 
-## Firstname Lastname (Class)
+## Ian Notermans (3AONA)
 Change the name and Class in the title above
 
 ## Folder structure
