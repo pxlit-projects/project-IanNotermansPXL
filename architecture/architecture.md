@@ -25,7 +25,7 @@
         - When a GET request is made to fetch a post, the Post Service uses OpenFeign (sync communication) to call the Review Service and Comment Service. It retrieves the linked reviews and comments based on their IDs, combines them with the post data, and sends the full response back to the API Gateway.
      
    - **Message Bus (Async)**
-        - When a GET request is made to fetch a post, the Post Service uses OpenFeign (sync communication) to call the Review Service and Comment Service. It retrieves the linked reviews and comments based on their IDs, combines them with the post data, and sends the full response back to the API Gateway.
+        - When a new comment or review is added to a post, a RabbitMQ message is sent to the queue. The Post Service listens to the queue, updates the relevant post in its database by linking the new review or comment ID, and saves the changes.
   
 
 ### 5. **Eureka Discovery Service**
