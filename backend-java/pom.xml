@@ -11,7 +11,8 @@
 	<groupId>be.pxl</groupId>
 	<artifactId>backend-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend-java</name>
+    <packaging>pom</packaging>
+    <name>backend-java</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,12 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>post-service</module>
+		<module>review-service</module>
+		<module>comment-service</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
