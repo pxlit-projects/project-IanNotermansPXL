@@ -25,18 +25,20 @@ public class PostController {
 
     @PostMapping
     public ResponseEntity<PostResponse> addPost(@RequestBody PostRequest request) {
-        try {
+
             PostResponse postResponse = postService.addPost(request);
             return ResponseEntity.ok(postResponse);
-        } catch (PostNotFoundException e) {
-            return ResponseEntity.notFound().build();
-        }
+
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<PostResponse> getPostById(@PathVariable Long id) {
-        PostResponse postResponse = postService.getPostById(id);
-        return ResponseEntity.ok(postResponse);
+        try {
+            PostResponse postResponse = postService.getPostById(id);
+            return ResponseEntity.ok(postResponse);
+        } catch (PostNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @GetMapping("/status/{status}")
