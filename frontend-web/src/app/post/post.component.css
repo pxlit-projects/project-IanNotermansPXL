@@ -1,0 +1,11 @@
+.container {
+  padding: 20px;
+}
+
+mat-card {
+  margin-top: 20px;
+}
+
+.secondary {
+  color: gray;
+}
