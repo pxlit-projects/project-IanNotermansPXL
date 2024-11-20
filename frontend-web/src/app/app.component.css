@@ -1,0 +1,28 @@
+/* src/app/app.component.css */
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: #777;
+}
