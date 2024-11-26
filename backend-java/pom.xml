@@ -27,6 +27,7 @@
 		<module>comment-service</module>
 		<module>discovery-service</module>
 		<module>config-service</module>
+		<module>gateway-service</module>
 	</modules>
     <scm>
 		<connection/>
@@ -57,10 +58,6 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
