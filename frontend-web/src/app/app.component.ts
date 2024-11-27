@@ -1,17 +1,28 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {PostComponent} from "./post/post.component";
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatCard, MatCardContent} from "@angular/material/card";
+import {EditorComponent} from "./core/navbar/editor/editor.component";
+import {UserComponent} from "./core/navbar/user/user.component";
+import {User} from "./shared/models/user.model";
+import {AuthService} from "./shared/services/auth.service";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatToolbar, MatCardContent, MatCard],
+  imports: [RouterOutlet, MatToolbar, MatCardContent, MatCard, EditorComponent, UserComponent, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 
 })
 export class AppComponent {
-  title = 'frontend';
-}
+  currentUser: User | null = null;
+  authService: AuthService = inject(AuthService);
+
+  ngOnInit(): void {
+    this.authService.currentUser$.subscribe((user) => {
+      this.currentUser = user;
+    });
+
+  }}

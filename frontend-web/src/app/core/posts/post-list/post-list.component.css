@@ -1,0 +1,41 @@
+.all-posts {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.all-posts h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.all-posts button {
+  margin-bottom: 20px;
+}
+
+.mat-list-item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.mat-list-item:hover {
+  background-color: #f1f1f1;
+}
+
+.post-content {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-weight: bold;
+  color: #555;
+}
+
+.post-author {
+  color: #888;
+}

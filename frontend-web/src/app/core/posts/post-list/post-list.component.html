@@ -1,0 +1,30 @@
+<div class="all-posts">
+  <h2>Published Posts</h2>
+  <form (ngSubmit)="applyFilters()" class="filter-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Content</mat-label>
+      <input matInput [(ngModel)]="filters.content" name="content" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Author</mat-label>
+      <input matInput [(ngModel)]="filters.author" name="author" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput [(ngModel)]="filters.date" name="date" type="date" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Apply Filters</button>
+  </form>
+  <mat-list>
+    <mat-list-item
+      *ngFor="let post of filteredPosts"
+      [routerLink]="['/posts', post.id]"
+      class="post-item"
+    >
+      <div class="post-content">
+        <div mat-line class="post-title">Title: {{ post.title }}</div>
+        <div mat-line class="post-author secondary">Author: {{ post.author }}</div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>

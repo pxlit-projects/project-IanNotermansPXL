@@ -1,0 +1,27 @@
+.post-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}

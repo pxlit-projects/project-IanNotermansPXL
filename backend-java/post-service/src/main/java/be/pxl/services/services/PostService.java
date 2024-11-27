@@ -26,12 +26,13 @@ public class PostService implements IPostService{
 
     @Override
     public PostResponse addPost(PostRequest request) {
-        Post post = new Post(request.getId(),
-                request.getTitle(),
-                request.getContent(),
-                request.getAuthor(),
-                request.getCreatedAt(),
-                request.getStatus());
+        Post post = new Post();
+        post.setTitle(request.getTitle());
+        post.setContent(request.getContent());
+        post.setAuthor(request.getAuthor());
+        post.setCreatedAt(request.getCreatedAt());
+        post.setStatus(request.getStatus());
+
         Post savedPost = postRepository.save(post);
         return mapPostToResponse(savedPost);
     }

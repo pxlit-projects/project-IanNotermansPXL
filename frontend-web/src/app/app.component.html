@@ -1,15 +1,9 @@
-<mat-toolbar color="primary">
-  <span>{{ title }}</span>
-</mat-toolbar>
+<ng-container *ngIf="currentUser as user">
+  <app-editor *ngIf="user.role === 'editor'"></app-editor>
+  <app-user *ngIf="user.role === 'user'"></app-user>
+</ng-container>
 
 <main>
-  <mat-card>
-    <mat-card-content>
       <router-outlet></router-outlet>
-    </mat-card-content>
-  </mat-card>
 </main>
 
-<footer>
-  &copy; 2023 Your Company
-</footer>

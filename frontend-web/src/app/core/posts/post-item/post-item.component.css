@@ -1,0 +1,25 @@
+/* src/app/core/posts/post-item/post-item.component.css */
+
+
+mat-card {
+  border: none;
+  background-color: #f9f9f9;
+}
+
+mat-card-title {
+  font-weight: bold;
+  color: #555;
+}
+
+mat-card-content {
+  padding: 20px;
+}
+
+mat-card-content p {
+  margin: 10px 0;
+  color: #666;
+}
+
+mat-card-content p strong {
+  color: #333;
+}
