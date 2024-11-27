@@ -51,6 +51,32 @@ public class PostService implements IPostService{
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public PostResponse updatePost(Long id, PostRequest request) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new PostNotFoundException("Post not found"));
+
+        post.setTitle(request.getTitle());
+        post.setContent(request.getContent());
+        post.setAuthor(request.getAuthor());
+        post.setCreatedAt(request.getCreatedAt());
+        post.setStatus(request.getStatus());
+
+        Post updatedPost = postRepository.save(post);
+        return mapPostToResponse(updatedPost);
+    }
+
+    @Override
+    public PostResponse publishPost(Long id) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new PostNotFoundException("Post not found"));
+
+        post.setStatus(PostStatus.PUBLISHED);
+
+        Post updatedPost = postRepository.save(post);
+        return mapPostToResponse(updatedPost);
+    }
+
     private PostResponse mapPostToResponse(Post post) {
         return PostResponse.builder()
                 .id(post.getId())

@@ -12,4 +12,6 @@ public interface IPostService {
     PostResponse addPost(PostRequest request);
     PostResponse getPostById(Long id);
     List<PostResponse> getPostsByStatus(PostStatus status);
-}
+    PostResponse updatePost(Long id, PostRequest request);
+    PostResponse publishPost(Long id);
+    }

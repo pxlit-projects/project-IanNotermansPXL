@@ -46,4 +46,24 @@ public class PostController {
         List<PostResponse> posts = postService.getPostsByStatus(status);
         return ResponseEntity.ok(posts);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<PostResponse> updatePost(@PathVariable Long id, @RequestBody PostRequest request) {
+        try {
+            PostResponse postResponse = postService.updatePost(id, request);
+            return ResponseEntity.ok(postResponse);
+        } catch (PostNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @PutMapping("/{id}/publish")
+    public ResponseEntity<PostResponse> publishPost(@PathVariable Long id) {
+        try {
+            PostResponse postResponse = postService.publishPost(id);
+            return ResponseEntity.ok(postResponse);
+        } catch (PostNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
 }
