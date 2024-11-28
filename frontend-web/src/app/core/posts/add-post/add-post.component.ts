@@ -1,8 +1,8 @@
 import {Component, inject} from '@angular/core';
 import {PostService} from "../../../shared/services/post.service";
-import {FormBuilder, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {MatError, MatFormField, MatLabel} from "@angular/material/form-field";
-import {NgIf} from "@angular/common";
+
 import {MatInput} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 import {MatCheckbox} from "@angular/material/checkbox";
@@ -16,14 +16,13 @@ import {User} from "../../../shared/models/user.model";
   imports: [
     MatFormField,
     FormsModule,
-    NgIf,
     ReactiveFormsModule,
     MatInput,
     MatButton,
     MatError,
     MatLabel,
     MatCheckbox
-  ],
+],
   templateUrl: './add-post.component.html',
   styleUrl: './add-post.component.css'
 })
@@ -53,6 +52,4 @@ export class AddPostComponent {
       });
     }
   }
-
-
 }

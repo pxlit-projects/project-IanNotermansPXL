@@ -4,9 +4,11 @@
     <mat-form-field appearance="fill" class="full-width">
       <mat-label>Title</mat-label>
       <input matInput formControlName="title" placeholder="Enter the title" />
-      <mat-error *ngIf="postForm.get('title')?.hasError('required')">
-        Title is required
-      </mat-error>
+      @if (postForm.get('title')?.hasError('required')) {
+        <mat-error>
+          Title is required
+        </mat-error>
+      }
     </mat-form-field>
 
     <mat-form-field appearance="fill" class="full-width">
@@ -17,9 +19,11 @@
         placeholder="Enter the content"
         rows="4"
       ></textarea>
-      <mat-error *ngIf="postForm.get('content')?.hasError('required')">
-        Content is required
-      </mat-error>
+      @if (postForm.get('content')?.hasError('required')) {
+        <mat-error>
+          Content is required
+        </mat-error>
+      }
     </mat-form-field>
 
     <mat-form-field appearance="fill" class="full-width">
@@ -28,25 +32,27 @@
         matInput
         formControlName="author"
         placeholder="Enter the author's name"
-      />
-      <mat-error *ngIf="postForm.get('author')?.hasError('required')">
-        Author is required
-      </mat-error>
-    </mat-form-field>
+        />
+        @if (postForm.get('author')?.hasError('required')) {
+          <mat-error>
+            Author is required
+          </mat-error>
+        }
+      </mat-form-field>
 
-    <mat-checkbox formControlName="isConcept" class="checkbox">
-      Concept
-    </mat-checkbox>
+      <mat-checkbox formControlName="isConcept" class="checkbox">
+        Concept
+      </mat-checkbox>
 
-    <div class="button-container">
-      <button
-        mat-raised-button
-        color="primary"
-        type="submit"
-        [disabled]="postForm.invalid"
-      >
-        Add Post
-      </button>
+      <div class="button-container">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="postForm.invalid"
+          >
+          Add Post
+        </button>
+      </div>
     </div>
-  </div>
-</form>
+  </form>

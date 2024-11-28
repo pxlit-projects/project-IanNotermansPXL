@@ -1,42 +1,38 @@
 import {Component, inject} from '@angular/core';
-import {Post} from "../../../shared/models/post.model";
-import {PostService} from "../../../shared/services/post.service";
-import {RouterLink} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatButton} from "@angular/material/button";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
-import {FormsModule} from "@angular/forms";
 import {MatInput} from "@angular/material/input";
-import {
-  MatCard,
-  MatCardActions,
-  MatCardHeader,
-  MatCardSubtitle,
-  MatCardTitle
-} from "@angular/material/card";
-import {AuthService} from "../../../shared/services/auth.service";
-import {EditPostDialogComponent} from "../edit-post-dialog/edit-post-dialog.component";
+import {Post} from "../../../shared/models/post.model";
+import {PostService} from "../../../shared/services/post.service";
+import {RouterModule} from "@angular/router";
+import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatDialog} from "@angular/material/dialog";
+import {EditPostDialogComponent} from "../edit-post-dialog/edit-post-dialog.component";
 
 @Component({
-  selector: 'app-post-list',
+  selector: 'app-concept-post-list',
   standalone: true,
   imports: [
-    RouterLink,
+    FormsModule,
     MatButton,
     MatFormField,
-    FormsModule,
     MatInput,
     MatLabel,
+    ReactiveFormsModule,
+    RouterModule,
     MatCard,
-    MatCardHeader,
     MatCardActions,
+    MatCardHeader,
     MatCardSubtitle,
-    MatCardTitle
+    MatCardTitle,
+    MatLabel,
+
   ],
-  templateUrl: './post-list.component.html',
-  styleUrl: './post-list.component.css'
+  templateUrl: './concept-post-list.component.html',
+  styleUrl: './concept-post-list.component.css'
 })
-export class PostListComponent {
+export class ConceptPostListComponent {
   posts: Post[] = [];
   filteredPosts: Post[] = [];
   filters = {
@@ -45,7 +41,6 @@ export class PostListComponent {
     date: ''
   };
   postService: PostService = inject(PostService);
-  authService: AuthService = inject(AuthService);
   dialog: MatDialog = inject(MatDialog);
 
   ngOnInit(): void {
@@ -53,10 +48,20 @@ export class PostListComponent {
   }
 
   loadAllPosts(): void {
-    this.postService.getPostsByStatus("PUBLISHED").subscribe((data) => {
+    this.postService.getPostsByStatus("CONCEPT").subscribe((data) => {
       this.posts = data;
       this.filteredPosts = data;
     });
+  }
+
+  publishPost(post: Post): void {
+    if (post.id !== undefined) {
+      this.postService.publishPost(post.id).subscribe(() => {
+        this.loadAllPosts();
+      });
+    } else {
+      console.error('Post ID is undefined');
+    }
   }
 
   applyFilters(): void {

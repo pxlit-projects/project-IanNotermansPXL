@@ -16,9 +16,6 @@ export class PostService {
       catchError(this.handleError)
     );
   }
-  getAllPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.baseUrl);
-  }
 
   getPostById(id: number): Observable<Post> {
     return this.http.get<Post>(`${this.baseUrl}/${id}`);
@@ -26,6 +23,18 @@ export class PostService {
 
   getPostsByStatus(status: string): Observable<Post[]> {
     return this.http.get<Post[]>(`${this.baseUrl}/status/${status}`);
+  }
+
+  updatePost(id: number, post: Post): Observable<Post> {
+    return this.http.put<Post>(`${this.baseUrl}/${id}`, post).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  publishPost(id: number): Observable<Post> {
+    return this.http.put<Post>(`${this.baseUrl}/${id}/publish`, {}).pipe(
+      catchError(this.handleError)
+    );
   }
 
   private handleError(error: HttpErrorResponse): Observable<never> {

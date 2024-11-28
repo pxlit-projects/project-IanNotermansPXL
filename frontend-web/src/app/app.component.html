@@ -1,9 +1,13 @@
-<ng-container *ngIf="currentUser as user">
-  <app-editor *ngIf="user.role === 'editor'"></app-editor>
-  <app-user *ngIf="user.role === 'user'"></app-user>
-</ng-container>
+@if (currentUser; as user) {
+  @if (user.role === 'editor') {
+    <app-editor></app-editor>
+  }
+  @if (user.role === 'user') {
+    <app-user></app-user>
+  }
+}
 
 <main>
-      <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
 

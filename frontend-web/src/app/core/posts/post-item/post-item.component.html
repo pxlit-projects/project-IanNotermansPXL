@@ -1,14 +1,16 @@
-<div *ngIf="selectedPost">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>{{ selectedPost.title }}</mat-card-title>
-      <mat-card-subtitle>By {{ selectedPost.author }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-divider></mat-divider>
-    <mat-card-content>
-      <p>{{ selectedPost.content }}</p>
-      <p><strong>Created At:</strong> {{ selectedPost.createdAt }}</p>
-      <p><strong>Status:</strong> {{ selectedPost.status }}</p>
-    </mat-card-content>
-  </mat-card>
-</div>
+@if (selectedPost) {
+  <div>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ selectedPost.title }}</mat-card-title>
+        <mat-card-subtitle>By {{ selectedPost.author }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>{{ selectedPost.content }}</p>
+        <p><strong>Created At:</strong> {{ selectedPost.createdAt }}</p>
+        <p><strong>Status:</strong> {{ selectedPost.status }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+}
