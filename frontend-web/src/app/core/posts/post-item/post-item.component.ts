@@ -5,6 +5,7 @@ import {Post} from "../../../shared/models/post.model";
 import {PostService} from "../../../shared/services/post.service";
 import {ActivatedRoute} from "@angular/router";
 import {MatDivider} from "@angular/material/divider";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-post-item',
@@ -16,7 +17,8 @@ import {MatDivider} from "@angular/material/divider";
     MatCardSubtitle,
     MatCardTitle,
     MatDivider
-],
+  ],
+  providers: [DatePipe],
   templateUrl: './post-item.component.html',
   styleUrl: './post-item.component.css'
 })
@@ -24,6 +26,7 @@ export class PostItemComponent {
   selectedPost: Post | undefined;
   postService: PostService = inject(PostService);
   route: ActivatedRoute = inject(ActivatedRoute);
+  datePipe: DatePipe = inject(DatePipe);
 
   ngOnInit(): void {
     const postId = this.route.snapshot.paramMap.get('id');
@@ -32,5 +35,9 @@ export class PostItemComponent {
         this.selectedPost = post;
       });
     }
+  }
+
+  formatDate(date: string): string | null {
+    return this.datePipe.transform(date, 'MMMM d, y, h:mm a');
   }
 }

@@ -18,13 +18,13 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String title;
+    @Column(length = 10000)
     private String content;
     private String author;
     private LocalDateTime createdAt;
 
     @Enumerated(EnumType.STRING)
-    private PostStatus status; // CONCEPT, PUBLISHED
+    private PostStatus status;
 
 }
