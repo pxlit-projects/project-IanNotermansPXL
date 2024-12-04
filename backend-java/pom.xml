@@ -28,7 +28,8 @@
 		<module>discovery-service</module>
 		<module>config-service</module>
 		<module>gateway-service</module>
-	</modules>
+        <module>messaging-service</module>
+    </modules>
     <scm>
 		<connection/>
 		<developerConnection/>
