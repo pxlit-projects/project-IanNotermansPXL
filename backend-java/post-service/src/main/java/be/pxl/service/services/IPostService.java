@@ -14,4 +14,5 @@ public interface IPostService {
     List<PostResponse> getPostsByStatus(PostStatus status);
     PostResponse updatePost(Long id, PostRequest request);
     PostResponse publishPost(Long id);
+    List<PostResponse> getAllNotPublishedPosts();
     }

@@ -13,6 +13,29 @@
       <mat-card-content>
         <p>{{ selectedPost.content }}</p>
       </mat-card-content>
+      @if (selectedPost.status === 'CONCEPT' && isEditor()) {
+        <mat-card-actions>
+          <button mat-button class="green" (click)="reviewPost(true)">
+            <mat-icon>thumb_up</mat-icon> Approve
+          </button>
+          <button mat-button color="warn" (click)="reviewPost(false)">
+            <mat-icon>thumb_down</mat-icon> Reject
+          </button>
+        </mat-card-actions>
+      }
+      @if (selectedPost.status === 'REJECTED' && isEditor()) {
+        <mat-card-content>
+          <p><strong>Rejection Reason:</strong> {{ selectedPost.reviewComment }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="green" (click)="reviewPost(true)">
+            <mat-icon>thumb_up</mat-icon> Approve
+          </button>
+          <button mat-button color="warn" (click)="reviewPost(false)">
+            <mat-icon>thumb_down</mat-icon> Reject
+          </button>
+        </mat-card-actions>
+      }
     </mat-card>
   </div>
 }

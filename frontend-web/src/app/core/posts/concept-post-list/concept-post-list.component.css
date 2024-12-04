@@ -12,13 +12,6 @@
   margin-bottom: 20px;
 }
 
-.post-card {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
 .mat-list-item:hover {
   background-color: #f1f1f1;
 }
@@ -42,4 +35,31 @@
 .post-actions {
   display: flex;
   justify-content: flex-end;
+}
+
+.status-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.status-approved {
+  color: seagreen;
+}
+
+.status-concept {
+  color: dodgerblue;
+}
+
+.status-rejected {
+  color: darkred;
+}
+
+.post-card {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }

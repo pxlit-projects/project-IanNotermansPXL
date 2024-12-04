@@ -21,6 +21,6 @@ public class Review implements Serializable {
     private Long id;
     private Long postId;
     private String editor;
-    private String content;
+    private String reviewComment;
     private boolean approved;
 }

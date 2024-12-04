@@ -23,7 +23,8 @@ public class Post {
     private String content;
     private String author;
     private LocalDateTime createdAt;
-
     @Enumerated(EnumType.STRING)
     private PostStatus status;
+    @Column(nullable = true)
+    private String reviewComment;
 }

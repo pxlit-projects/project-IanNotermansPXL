@@ -21,9 +21,14 @@
         <mat-card-header>
           <mat-card-title>{{ post.title }}</mat-card-title>
           <mat-card-subtitle>Author: {{ post.author }}</mat-card-subtitle>
+          <span class="status-indicator" [ngClass]="getStatusClass(post.status)">
+            {{ post.status }}
+          </span>
         </mat-card-header>
         <mat-card-actions class="post-actions">
-          <button mat-button color="primary" (click)="publishPost(post)">Publish Post</button>
+          @if (post.status == "APPROVED"){
+            <button mat-button color="primary" (click)="publishPost(post)">Publish Post</button>
+          }
           <button mat-button color="primary" (click)="editPost(post)">Edit Post</button>
           <button mat-button color="primary" [routerLink]="['/posts', post.id]">Read More</button>
         </mat-card-actions>

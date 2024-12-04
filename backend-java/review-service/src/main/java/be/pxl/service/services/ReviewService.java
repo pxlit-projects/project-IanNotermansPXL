@@ -19,11 +19,13 @@ public class ReviewService implements IReviewService {
         if (review != null) {
             review.setApproved(reviewRequest.isApproved());
             review.setEditor(reviewRequest.getEditor());
+            review.setReviewComment(reviewRequest.getReviewComment());
             reviewRepository.save(review);
         } else {
             review = Review.builder()
                     .editor(reviewRequest.getEditor())
                     .approved(reviewRequest.isApproved())
+                    .reviewComment(reviewRequest.getReviewComment())
                     .postId(id)
                     .build();
             reviewRepository.save(review);

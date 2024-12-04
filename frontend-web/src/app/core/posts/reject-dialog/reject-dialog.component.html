@@ -1,0 +1,19 @@
+<div class="dialog-container">
+  <h4 mat-dialog-title>Rejection Comment</h4>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Comment</mat-label>
+    <textarea
+      matInput
+      [(ngModel)]="comment"
+      placeholder="Please provide your reason for rejection here."
+      aria-label="Rejection comment field"
+    ></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()" aria-label="Cancel action">Cancel</button>
+  <button mat-button color="primary" (click)="onSubmit()" aria-label="Submit action">Submit</button>
+</div>
+</div>
+

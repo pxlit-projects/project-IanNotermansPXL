@@ -47,6 +47,13 @@ public class PostController {
         }
     }
 
+    @GetMapping("/not-published")
+    public ResponseEntity<List<PostResponse>> getAllNotPublishedPosts() {
+        log.info("Getting all not published posts (Concepts, approved, rejected)");
+        List<PostResponse> posts = postService.getAllNotPublishedPosts();
+        return ResponseEntity.ok(posts);
+    }
+
     @GetMapping("/status/{status}")
     public ResponseEntity<List<PostResponse>> getPostsByStatus(@PathVariable PostStatus status) {
         log.info("Getting posts by status: {}", status);

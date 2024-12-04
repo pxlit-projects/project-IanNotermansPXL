@@ -1,0 +1,29 @@
+.dialog-container {
+  margin: 20px; /* External margin for the entire dialog */
+}
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between form elements */
+  margin: 16px; /* Adding external margin for balance */
+  padding: 20px; /* Internal padding for consistency */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 12px; /* Spacing below the form field */
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px; /* Increased spacing for buttons */
+  padding: 10px 20px; /* Added padding for better alignment */
+  margin-top: 10px; /* Margin above the action buttons */
+  background-color: #f0f0f0; /* Subtle background for separation */
+  border-top: 1px solid #e0e0e0; /* Optional divider for clarity */
+}

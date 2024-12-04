@@ -23,3 +23,7 @@ mat-card-content p {
 mat-card-content p strong {
   color: #333;
 }
+
+.green {
+  color: seagreen;
+}

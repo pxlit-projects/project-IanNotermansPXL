@@ -25,6 +25,10 @@ export class PostService {
     return this.http.get<Post[]>(`${this.baseUrl}/status/${status}`);
   }
 
+  getAllNotPublishedPosts(): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.baseUrl}/not-published`);
+  }
+
   updatePost(id: number, post: Post): Observable<Post> {
     return this.http.put<Post>(`${this.baseUrl}/${id}`, post).pipe(
       catchError(this.handleError)

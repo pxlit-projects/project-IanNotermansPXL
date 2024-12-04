@@ -9,6 +9,7 @@ import {RouterModule} from "@angular/router";
 import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatDialog} from "@angular/material/dialog";
 import {EditPostDialogComponent} from "../edit-post-dialog/edit-post-dialog.component";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-concept-post-list',
@@ -27,6 +28,7 @@ import {EditPostDialogComponent} from "../edit-post-dialog/edit-post-dialog.comp
     MatCardSubtitle,
     MatCardTitle,
     MatLabel,
+    NgClass,
 
   ],
   templateUrl: './concept-post-list.component.html',
@@ -48,7 +50,7 @@ export class ConceptPostListComponent {
   }
 
   loadAllPosts(): void {
-    this.postService.getPostsByStatus("CONCEPT").subscribe((data) => {
+    this.postService.getAllNotPublishedPosts().subscribe((data) => {
       this.posts = data;
       this.filteredPosts = data;
     });
@@ -71,6 +73,19 @@ export class ConceptPostListComponent {
       const matchesDate = !this.filters.date || new Date(post.createdAt).toDateString() === new Date(this.filters.date).toDateString();
       return matchesContent && matchesAuthor && matchesDate;
     });
+  }
+
+  getStatusClass(status: string): string {
+    switch (status) {
+      case 'APPROVED':
+        return 'status-approved';
+      case 'CONCEPT':
+        return 'status-concept';
+      case 'REJECTED':
+        return 'status-rejected';
+      default:
+        return '';
+    }
   }
 
   editPost(post: Post): void {

@@ -15,4 +15,5 @@ public class ReviewRequest {
     private String editor;
     @JsonProperty("approved")
     private boolean approved;
+    private String reviewComment;
 }

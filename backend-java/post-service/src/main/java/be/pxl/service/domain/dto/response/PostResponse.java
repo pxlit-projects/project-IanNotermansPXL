@@ -19,4 +19,5 @@ public class PostResponse {
     private String author;
     private LocalDateTime createdAt;
     private PostStatus status; // CONCEPT, PUBLISHED
+    private String reviewComment;
 }

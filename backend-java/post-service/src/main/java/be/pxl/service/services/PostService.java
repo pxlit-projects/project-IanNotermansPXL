@@ -16,9 +16,8 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class PostService implements IPostService{
+public class PostService implements IPostService {
     private final PostRepository postRepository;
-
 
 
     @Override
@@ -46,6 +45,14 @@ public class PostService implements IPostService{
         return postRepository.findById(id)
                 .map(this::mapPostToResponse)
                 .orElseThrow(() -> new PostNotFoundException("Post not found"));
+    }
+
+    @Override
+    public List<PostResponse> getAllNotPublishedPosts() {
+        return postRepository.findAllExceptPublished()
+                .stream()
+                .map(this::mapPostToResponse)
+                .collect(Collectors.toList());
     }
 
     @Override
@@ -87,14 +94,20 @@ public class PostService implements IPostService{
 
     @RabbitListener(queues = "review", containerFactory = "rabbitListenerContainerFactory")
     public void receiveReview(Review review) {
-            Post post = postRepository.findById(review.getPostId())
-                    .orElseThrow(() -> new RuntimeException("Post not found"));
-            if (review.isApproved()) {
-                post.setStatus(PostStatus.APPROVED);
-            } else {
-                post.setStatus(PostStatus.REJECTED);
-            }
-            postRepository.save(post);
+        Post post = postRepository.findById(review.getPostId())
+                .orElseThrow(() -> new PostNotFoundException("Post not found"));
+
+        if (post.getStatus() == PostStatus.PUBLISHED) {
+            throw new RuntimeException("Post is already published");
+        }
+
+        if (review.isApproved()) {
+            post.setStatus(PostStatus.APPROVED);
+        } else {
+            post.setStatus(PostStatus.REJECTED);
+            post.setReviewComment(review.getReviewComment());
+        }
+        postRepository.save(post);
     }
 
     private PostResponse mapPostToResponse(Post post) {
@@ -105,6 +118,7 @@ public class PostService implements IPostService{
                 .author(post.getAuthor())
                 .createdAt(post.getCreatedAt())
                 .status(post.getStatus())
+                .reviewComment(post.getReviewComment())
                 .build();
     }
 }
