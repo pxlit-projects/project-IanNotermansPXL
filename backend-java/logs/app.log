@@ -327,3 +327,140 @@
 2024-12-04T11:59:54.902+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - No active profile set, falling back to 1 default profile: "default"
 2024-12-04T12:00:02.966+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - Started GatewayServiceApplication in 10.065 seconds (process running for 10.801)
 2024-12-04T12:00:07.696+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Adding new post
+2024-12-04T18:46:39.565+0100 INFO               [main]                         be.pxl.service.ConfigServiceApplication - Starting ConfigServiceApplication using Java 21.0.2 with PID 24448 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\config-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T18:46:39.567+0100 DEBUG              [main]                         be.pxl.service.ConfigServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T18:46:39.567+0100 INFO               [main]                         be.pxl.service.ConfigServiceApplication - The following 1 profile is active: "native"
+2024-12-04T18:46:43.198+0100 INFO               [main]                         be.pxl.service.ConfigServiceApplication - Started ConfigServiceApplication in 5.235 seconds (process running for 6.097)
+2024-12-04T18:46:49.408+0100 INFO               [main]                         be.pxl.service.DiscoveryServiceApplication - Starting DiscoveryServiceApplication using Java 21.0.2 with PID 12816 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\discovery-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T18:46:49.410+0100 DEBUG              [main]                         be.pxl.service.DiscoveryServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T18:46:49.410+0100 INFO               [main]                         be.pxl.service.DiscoveryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T18:46:54.590+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - Starting GatewayServiceApplication using Java 21.0.2 with PID 15504 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\gateway-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T18:46:54.591+0100 DEBUG              [main]                         be.pxl.service.GatewayServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T18:46:54.592+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T18:46:55.865+0100 INFO               [main]                         be.pxl.service.DiscoveryServiceApplication - Started DiscoveryServiceApplication in 8.674 seconds (process running for 9.542)
+2024-12-04T18:47:02.726+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - Started GatewayServiceApplication in 10.319 seconds (process running for 11.129)
+2024-12-04T18:47:03.676+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 6412 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\post-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T18:47:03.678+0100 DEBUG              [main]                         be.pxl.service.PostServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T18:47:03.679+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T18:47:07.684+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.2 with PID 15140 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T18:47:07.685+0100 DEBUG              [main]                         be.pxl.service.ReviewServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T18:47:07.686+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T18:47:12.576+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Started PostServiceApplication in 10.954 seconds (process running for 11.718)
+2024-12-04T18:47:15.234+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Started ReviewServiceApplication in 9.727 seconds (process running for 10.728)
+2024-12-04T18:47:56.486+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T18:48:55.550+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T18:49:00.529+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting posts by status: CONCEPT
+2024-12-04T18:49:13.036+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T18:49:23.130+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Adding new post
+2024-12-04T18:49:23.232+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 252
+2024-12-04T18:49:28.712+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting posts by status: CONCEPT
+2024-12-04T18:50:39.794+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting posts by status: CONCEPT
+2024-12-04T18:50:51.807+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 252
+2024-12-04T18:51:35.807+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting posts by status: CONCEPT
+2024-12-04T18:51:54.757+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T18:51:55.869+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting posts by status: CONCEPT
+2024-12-04T18:53:11.028+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Adding new post
+2024-12-04T18:53:11.095+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:53:24.214+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:56:32.229+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:56:37.954+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:57:28.612+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:58:44.461+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T18:59:01.366+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T19:00:19.170+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T19:04:55.674+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 16520 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\post-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T19:04:55.676+0100 DEBUG              [main]                         be.pxl.service.PostServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T19:04:55.676+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T19:05:03.845+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Started PostServiceApplication in 10.224 seconds (process running for 11.033)
+2024-12-04T19:05:57.554+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T19:05:59.994+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:06:37.031+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:10:26.685+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:11:12.853+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:11:42.717+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:11:59.224+0100 INFO               [http-nio-8082-exec-8]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:12:36.111+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T19:12:39.993+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:12:43.800+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Publishing post with id: 252
+2024-12-04T19:12:43.869+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:12:45.201+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T19:12:46.940+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting post by id: 252
+2024-12-04T19:12:48.212+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T19:12:54.193+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting posts by status: PUBLISHED
+2024-12-04T19:12:54.868+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:12:57.174+0100 INFO               [http-nio-8082-exec-8]         be.pxl.service.controller.PostController - Getting post by id: 202
+2024-12-04T19:13:33.247+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:13:34.746+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 202
+2024-12-04T19:13:35.595+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T19:13:36.821+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T19:14:21.486+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T19:14:56.325+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:08:39.165+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:10:36.632+0100 INFO               [http-nio-8082-exec-8]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:13:27.265+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 13032 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\post-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:13:27.266+0100 DEBUG              [main]                         be.pxl.service.PostServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:13:27.267+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:13:32.328+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.2 with PID 23176 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:13:32.329+0100 DEBUG              [main]                         be.pxl.service.ReviewServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:13:32.330+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:13:36.187+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Started PostServiceApplication in 11.137 seconds (process running for 11.989)
+2024-12-04T20:13:39.675+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Started ReviewServiceApplication in 9.515 seconds (process running for 10.488)
+2024-12-04T20:15:07.201+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Adding new post
+2024-12-04T20:15:07.307+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:16:22.198+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 39588 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\post-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:16:22.199+0100 DEBUG              [main]                         be.pxl.service.PostServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:16:22.200+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:16:29.786+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Started PostServiceApplication in 9.615 seconds (process running for 10.361)
+2024-12-04T20:18:55.912+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.2 with PID 28632 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:18:55.913+0100 DEBUG              [main]                         be.pxl.service.ReviewServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:18:55.914+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:19:03.228+0100 INFO               [main]                         be.pxl.service.ReviewServiceApplication - Started ReviewServiceApplication in 9.315 seconds (process running for 10.046)
+2024-12-04T20:19:34.183+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - Starting GatewayServiceApplication using Java 21.0.2 with PID 26968 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\gateway-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:19:34.185+0100 DEBUG              [main]                         be.pxl.service.GatewayServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:19:34.185+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:19:41.324+0100 INFO               [main]                         be.pxl.service.GatewayServiceApplication - Started GatewayServiceApplication in 9.112 seconds (process running for 9.96)
+2024-12-04T20:20:02.502+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:20:05.082+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:20:20.858+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting all posts
+2024-12-04T20:21:12.397+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 34876 (C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\post-service\target\classes started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java)
+2024-12-04T20:21:12.398+0100 DEBUG              [main]                         be.pxl.service.PostServiceApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-04T20:21:12.399+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T20:21:20.032+0100 INFO               [main]                         be.pxl.service.PostServiceApplication - Started PostServiceApplication in 9.69 seconds (process running for 10.499)
+2024-12-04T20:21:23.460+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting all posts
+2024-12-04T20:21:31.272+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:21:52.565+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:31:24.514+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting post by id: 202
+2024-12-04T20:31:25.656+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:38:54.606+0100 INFO               [http-nio-8082-exec-8]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:38:59.297+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:39:05.126+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:39:06.548+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:39:32.072+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:39:33.664+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:39:35.089+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:39:35.954+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:40:01.512+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:40:11.977+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:41:28.955+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:41:29.771+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:41:39.826+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:41:49.559+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:41:50.947+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting post by id: 253
+2024-12-04T20:42:04.831+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:42:12.548+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:42:13.151+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:42:16.381+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:43:31.184+0100 INFO               [http-nio-8082-exec-9]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:43:51.557+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:44:29.987+0100 INFO               [http-nio-8082-exec-2]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:44:37.494+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:45:51.980+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:46:05.579+0100 INFO               [http-nio-8082-exec-5]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:46:38.941+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:47:26.130+0100 INFO               [http-nio-8082-exec-7]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:48:00.066+0100 INFO               [http-nio-8082-exec-8]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:51:45.285+0100 INFO               [http-nio-8082-exec-10]        be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:53:35.267+0100 INFO               [http-nio-8082-exec-1]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T20:53:38.126+0100 INFO               [http-nio-8082-exec-3]         be.pxl.service.controller.PostController - Getting post by id: 302
+2024-12-04T20:53:51.789+0100 INFO               [http-nio-8082-exec-4]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)
+2024-12-04T21:17:45.821+0100 INFO               [http-nio-8082-exec-6]         be.pxl.service.controller.PostController - Getting all not published posts (Concepts, approved, rejected)

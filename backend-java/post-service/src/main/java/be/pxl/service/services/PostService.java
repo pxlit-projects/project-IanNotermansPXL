@@ -8,6 +8,8 @@ import be.pxl.service.domain.dto.response.PostResponse;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class PostService implements IPostService {
     private final PostRepository postRepository;
-
+    private static final Logger log = LoggerFactory.getLogger(PostService.class);
 
     @Override
     public List<PostResponse> getAllPosts() {
@@ -94,16 +96,20 @@ public class PostService implements IPostService {
 
     @RabbitListener(queues = "review", containerFactory = "rabbitListenerContainerFactory")
     public void receiveReview(Review review) {
+        log.info("Received review for post with id: {}", review.getPostId());
         Post post = postRepository.findById(review.getPostId())
                 .orElseThrow(() -> new PostNotFoundException("Post not found"));
 
         if (post.getStatus() == PostStatus.PUBLISHED) {
+            log.error("Post is already published");
             throw new RuntimeException("Post is already published");
         }
 
         if (review.isApproved()) {
+            log.info("Review is approved");
             post.setStatus(PostStatus.APPROVED);
         } else {
+            log.info("Review is rejected with comment: {}", review.getReviewComment());
             post.setStatus(PostStatus.REJECTED);
             post.setReviewComment(review.getReviewComment());
         }
