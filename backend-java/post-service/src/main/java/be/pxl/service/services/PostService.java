@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,9 @@ import java.util.stream.Collectors;
 public class PostService implements IPostService {
     private final PostRepository postRepository;
     private static final Logger log = LoggerFactory.getLogger(PostService.class);
+
+    @Autowired
+    private MailService mailService;
 
     @Override
     public List<PostResponse> getAllPosts() {
@@ -97,6 +101,7 @@ public class PostService implements IPostService {
     @RabbitListener(queues = "review", containerFactory = "rabbitListenerContainerFactory")
     public void receiveReview(Review review) {
         log.info("Received review for post with id: {}", review.getPostId());
+
         Post post = postRepository.findById(review.getPostId())
                 .orElseThrow(() -> new PostNotFoundException("Post not found"));
 
@@ -108,12 +113,18 @@ public class PostService implements IPostService {
         if (review.isApproved()) {
             log.info("Review is approved");
             post.setStatus(PostStatus.APPROVED);
+            postRepository.save(post);
+
+            mailService.sendMail("Post Approved " + review.getPostId(), "Your post has been approved.");
         } else {
             log.info("Review is rejected with comment: {}", review.getReviewComment());
             post.setStatus(PostStatus.REJECTED);
             post.setReviewComment(review.getReviewComment());
+            postRepository.save(post);
+
+            mailService.sendMail("Post Rejected " + post.getId(), "Your post has been rejected. Comment: " + review.getReviewComment());
         }
-        postRepository.save(post);
+        log.info("Post with ID: {} has a new review", review.getPostId());
     }
 
     private PostResponse mapPostToResponse(Post post) {

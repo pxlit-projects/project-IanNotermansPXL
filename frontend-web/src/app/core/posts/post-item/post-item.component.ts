@@ -72,15 +72,17 @@ export class PostItemComponent {
 
     if (postId !== undefined && username !== undefined) {
       if (approve) {
-        this.reviewService.reviewPost(postId, username, true, "").subscribe();
-        this.router.navigate(['/concepts']);
+        this.reviewService.reviewPost(postId, username, true, "").subscribe(() => {
+          this.router.navigate(['/concepts']);
+        });
       } else {
         const dialogRef = this.dialog.open(RejectDialogComponent);
 
         dialogRef.afterClosed().subscribe(result => {
           if (result) {
-            this.reviewService.reviewPost(postId, username, false, result).subscribe();
-            this.router.navigate(['/concepts']);
+            this.reviewService.reviewPost(postId, username, false, result).subscribe(() => {
+              this.router.navigate(['/concepts']);
+            });
           }
         });
       }
