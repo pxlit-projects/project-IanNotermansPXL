@@ -4,8 +4,8 @@ import be.pxl.service.client.PostClient;
 import be.pxl.service.domain.Review;
 import be.pxl.service.domain.dto.request.ReviewRequest;
 import be.pxl.service.domain.dto.response.PostResponse;
+import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.repository.ReviewRepository;
-import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,23 +22,23 @@ public class ReviewService implements IReviewService {
     private static final Logger log = LoggerFactory.getLogger(ReviewService.class);
 
     @Override
-    public void addReview(Long id, ReviewRequest reviewRequest) {
+    public void addReview(Long id, ReviewRequest reviewRequest, String user) {
         log.info("Finding post with id: {}", id);
-        PostResponse post = postClient.getPostById(id);
+        PostResponse post = postClient.getPostById(id, user, "editor");
         log.info("Post with id: {} found", id);
         if (post == null){
-            throw new NotFoundException("Post with id: " + id + " does not exist");
+            throw new PostNotFoundException("Post with id: " + id + " does not exist");
         }
 
         Review review = reviewRepository.findByPostId(id);
         if (review != null) {
             review.setApproved(reviewRequest.isApproved());
-            review.setEditor(reviewRequest.getEditor());
+            review.setEditor(user);
             review.setReviewComment(reviewRequest.getReviewComment());
             reviewRepository.save(review);
         } else {
             review = Review.builder()
-                    .editor(reviewRequest.getEditor())
+                    .editor(user)
                     .approved(reviewRequest.isApproved())
                     .reviewComment(reviewRequest.getReviewComment())
                     .postId(id)
