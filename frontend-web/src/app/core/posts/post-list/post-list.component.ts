@@ -53,7 +53,7 @@ export class PostListComponent {
   }
 
   loadAllPosts(): void {
-    this.postService.getPostsByStatus("PUBLISHED").subscribe((data) => {
+    this.postService.getAllPublishedPosts().subscribe((data) => {
       this.posts = data;
       this.filteredPosts = data;
     });

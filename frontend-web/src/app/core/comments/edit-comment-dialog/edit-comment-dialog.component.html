@@ -1,0 +1,12 @@
+<mat-dialog-content>
+  <h2>Edit Comment</h2>
+  <mat-form-field appearance="fill" class="edit-comment-field">
+    <mat-label>Edit your comment</mat-label>
+    <textarea matInput [(ngModel)]="updatedComment"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="closeDialog()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="saveChanges()">Save</button>
+</mat-dialog-actions>

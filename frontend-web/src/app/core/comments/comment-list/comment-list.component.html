@@ -1,0 +1,25 @@
+@if (comments.length > 0) {
+  <div class="comments-container">
+    @for (comment of comments; track comment.id) {
+      <mat-card class="comment-card">
+        <mat-card-header>
+          <div class="comment-header">
+            <strong>By:</strong> {{ comment.commenter }}
+            <strong>At:</strong> {{ comment.addedAt | date: 'short' }}
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="comment-text">{{ comment.text }}</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          @if (comment.commenter === currentUser) {
+            <mat-icon color="primary" (click)="openEditCommentDialog(comment)">edit</mat-icon>
+            <mat-icon color="primary" (click)="deleteComment(comment.id)">delete</mat-icon>
+          }
+        </mat-card-actions>
+      </mat-card>
+    }
+  </div>
+} @else {
+  <p class="no-comments">No comments available for this post.</p>
+}

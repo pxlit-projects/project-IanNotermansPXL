@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(name = "post-service")
 public interface PostClient {
-    @GetMapping("/api/posts/{id}")
-    PostResponse getPostById(@PathVariable Long id, @RequestHeader String user, @RequestHeader String role);
+    @GetMapping("/api/posts/{id}/without-comments")
+    PostResponse getPostByIdWithoutComments(@PathVariable Long id, @RequestHeader String user, @RequestHeader String role);
 }

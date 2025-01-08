@@ -19,6 +19,8 @@ import {MatButton} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {RejectDialogComponent} from "../reject-dialog/reject-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
+import {CommentListComponent} from "../../comments/comment-list/comment-list.component";
+import {AddCommentDialogComponent} from "../../comments/add-comment-dialog/add-comment-dialog.component";
 
 @Component({
   selector: 'app-post-item',
@@ -32,7 +34,8 @@ import {MatDialog} from "@angular/material/dialog";
     MatDivider,
     MatCardActions,
     MatButton,
-    MatIconModule
+    MatIconModule,
+    CommentListComponent,
   ],
   providers: [DatePipe],
   templateUrl: './post-item.component.html',
@@ -66,26 +69,44 @@ export class PostItemComponent {
     return currentUser?.role === 'editor';
   }
 
+  openAddCommentDialog(): void {
+    const dialogRef = this.dialog.open(AddCommentDialogComponent, {
+      width: '400px',
+      data: { postId: this.selectedPost?.id },
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
+        location.reload();
+      }
+    });
+  }
+
   reviewPost(approve: boolean): void {
     const postId = this.selectedPost?.id;
     const username = this.authService.currentUser?.username;
 
     if (postId !== undefined && username !== undefined) {
       if (approve) {
-        this.reviewService.reviewPost(postId, username, true, "").subscribe(() => {
-          this.router.navigate(['/concepts']);
+        this.reviewService.reviewPost(postId, username, true, "").subscribe({
+          next: () => {
+            this.router.navigate(['/concepts']);
+          }
         });
       } else {
         const dialogRef = this.dialog.open(RejectDialogComponent);
 
         dialogRef.afterClosed().subscribe(result => {
           if (result) {
-            this.reviewService.reviewPost(postId, username, false, result).subscribe(() => {
-              this.router.navigate(['/concepts']);
+            this.reviewService.reviewPost(postId, username, false, result).subscribe({
+              next: () => {
+                this.router.navigate(['/concepts']);
+              }
             });
           }
         });
       }
     }
   }
+
 }

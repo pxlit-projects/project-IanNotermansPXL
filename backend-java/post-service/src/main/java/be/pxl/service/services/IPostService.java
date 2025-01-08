@@ -11,10 +11,11 @@ import java.util.List;
 public interface IPostService {
     List<PostResponse> getAllPosts();
     PostResponse addPost(PostRequest request, String user);
-    PostResponse getPostById(Long id);
+    PostCommentsResponse getPostById(Long id, String user, String role);
     List<PostResponse> getPostsByStatus(PostStatus status);
     PostResponse updatePost(Long id, PostRequest request, String user);
     PostResponse publishPost(Long id);
     List<PostResponse> getAllNotPublishedPosts();
     List<PostCommentsResponse> getPublishedPosts(String user, String role);
+    PostResponse getPostByIdWithoutComments(Long id, String user, String role);
     }

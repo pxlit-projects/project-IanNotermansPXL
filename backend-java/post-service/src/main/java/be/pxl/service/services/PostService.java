@@ -8,6 +8,7 @@ import be.pxl.service.domain.dto.request.PostRequest;
 import be.pxl.service.domain.dto.response.CommentResponse;
 import be.pxl.service.domain.dto.response.PostCommentsResponse;
 import be.pxl.service.domain.dto.response.PostResponse;
+import be.pxl.service.exceptions.NotYourPostException;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.repository.PostRepository;
 import jakarta.ws.rs.NotAuthorizedException;
@@ -34,7 +35,11 @@ public class PostService implements IPostService {
 
     @Override
     public List<PostResponse> getAllPosts() {
-        return postRepository.findAll().stream()
+        List<Post> posts = postRepository.findAll();
+        if (posts.isEmpty()) {
+            throw new PostNotFoundException("No posts found");
+        }
+        return posts.stream()
                 .map(this::mapPostToResponse)
                 .collect(Collectors.toList());
     }
@@ -53,14 +58,30 @@ public class PostService implements IPostService {
     }
 
     @Override
-    public PostResponse getPostById(Long id) {
-        return postRepository.findById(id)
-                .map(this::mapPostToResponse)
+    public PostCommentsResponse getPostById(Long id, String user, String role) {
+        Post post = postRepository.findById(id)
                 .orElseThrow(() -> new PostNotFoundException("Post not found"));
+
+        List<CommentResponse> comments;
+        try {
+            comments = commentClient.getCommentsByPostId(post.getId(), user, role);
+        } catch (Exception e) {
+            log.error("Failed to fetch comments for post with id: {}", post.getId(), e);
+            comments = List.of();
+        }
+
+        return mapPostToCommentsResponse(post, comments);
     }
+
+
 
     @Override
     public List<PostResponse> getAllNotPublishedPosts() {
+        List<Post> posts = postRepository.findAllExceptPublished();
+        if (posts.isEmpty()) {
+            throw new PostNotFoundException("No posts found");
+        }
+
         return postRepository.findAllExceptPublished()
                 .stream()
                 .map(this::mapPostToResponse)
@@ -87,6 +108,13 @@ public class PostService implements IPostService {
     }
 
     @Override
+    public PostResponse getPostByIdWithoutComments(Long id, String user, String role) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new PostNotFoundException("Post not found"));
+        return mapPostToResponse(post);
+    }
+
+    @Override
     public List<PostResponse> getPostsByStatus(PostStatus status) {
         List <PostResponse> posts = postRepository.findByStatus(status).stream()
                 .map(this::mapPostToResponse)
@@ -103,7 +131,7 @@ public class PostService implements IPostService {
                 .orElseThrow(() -> new PostNotFoundException("Post not found"));
 
         if (!user.equals(post.getAuthor())) {
-            throw new NotAuthorizedException("You cannot edit a post that is not yours");
+            throw new NotYourPostException("You cannot edit a post that is not yours");
         }
 
         post.setTitle(request.getTitle());

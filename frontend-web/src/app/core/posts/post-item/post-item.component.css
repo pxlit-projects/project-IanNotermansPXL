@@ -27,3 +27,14 @@ mat-card-content p strong {
 .green {
   color: seagreen;
 }
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.divider-container {
+  margin: 16px 0;
+}
+

@@ -4,6 +4,7 @@ import be.pxl.service.domain.PostStatus;
 import be.pxl.service.domain.dto.request.PostRequest;
 import be.pxl.service.domain.dto.response.PostCommentsResponse;
 import be.pxl.service.domain.dto.response.PostResponse;
+import be.pxl.service.exceptions.NotYourPostException;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.services.PostService;
 import jakarta.ws.rs.NotAuthorizedException;
@@ -71,14 +72,33 @@ public class PostController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<PostResponse> getPostById(@PathVariable Long id, @RequestHeader String user, @RequestHeader String role) {
+    public ResponseEntity<PostCommentsResponse> getPostById(@PathVariable Long id, @RequestHeader String user, @RequestHeader String role) {
         try {
             if (!role.equals("user") && !role.equals("editor")) {
                 log.info("User: {} is not authorized get this post", user);
                 return ResponseEntity.status(403).build();
             }
             log.info("Getting post by id: {}", id);
-            PostResponse postResponse = postService.getPostById(id);
+            PostCommentsResponse postResponse = postService.getPostById(id, user, role);
+            return ResponseEntity.ok(postResponse);
+        } catch (PostNotFoundException e) {
+            log.info("Post with id: {} not found", id);
+            return ResponseEntity.notFound().build();
+        } catch (Exception e) {
+            log.error(String.valueOf(e));
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    @GetMapping("/{id}/without-comments")
+    public ResponseEntity<PostResponse> getPostByIdWithoutComments(@PathVariable Long id, @RequestHeader String user, @RequestHeader String role) {
+        try {
+            if (!role.equals("user") && !role.equals("editor")) {
+                log.info("User: {} is not authorized get this post", user);
+                return ResponseEntity.status(403).build();
+            }
+            log.info("Getting post by id: {}", id);
+            PostResponse postResponse = postService.getPostByIdWithoutComments(id, user, role);
             return ResponseEntity.ok(postResponse);
         } catch (PostNotFoundException e) {
             log.info("Post with id: {} not found", id);
@@ -140,7 +160,7 @@ public class PostController {
         } catch (PostNotFoundException e) {
             log.info("Post to update with id: {} not found", id);
             return ResponseEntity.notFound().build();
-        } catch (NotAuthorizedException e) {
+        } catch (NotYourPostException e) {
             log.info(String.valueOf(e));
             return ResponseEntity.status(403).build();
         } catch (Exception e) {

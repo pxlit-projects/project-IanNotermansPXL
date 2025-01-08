@@ -1,0 +1,7 @@
+/* Overall styling for the comment list */
+.comment-card {
+  margin-bottom: 6px;
+  height: 7em;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+

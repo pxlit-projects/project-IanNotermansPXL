@@ -13,29 +13,33 @@
       <mat-card-content>
         <p>{{ selectedPost.content }}</p>
       </mat-card-content>
-      @if (selectedPost.status === 'CONCEPT' && isEditor()) {
+      @if ((selectedPost.status === 'CONCEPT' || selectedPost.status === 'REJECTED') && isEditor()) {
+        @if (selectedPost.status === 'REJECTED') {
+          <mat-card-content>
+            <p><strong>Rejection Reason:</strong> {{ selectedPost.reviewComment }}</p>
+          </mat-card-content>
+        }
         <mat-card-actions>
           <button mat-button class="green" (click)="reviewPost(true)">
-            <mat-icon>thumb_up</mat-icon> Approve
+            <mat-icon>thumb_up</mat-icon>
+            Approve
           </button>
           <button mat-button color="warn" (click)="reviewPost(false)">
-            <mat-icon>thumb_down</mat-icon> Reject
-          </button>
-        </mat-card-actions>
-      }
-      @if (selectedPost.status === 'REJECTED' && isEditor()) {
-        <mat-card-content>
-          <p><strong>Rejection Reason:</strong> {{ selectedPost.reviewComment }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button class="green" (click)="reviewPost(true)">
-            <mat-icon>thumb_up</mat-icon> Approve
-          </button>
-          <button mat-button color="warn" (click)="reviewPost(false)">
-            <mat-icon>thumb_down</mat-icon> Reject
+            <mat-icon>thumb_down</mat-icon>
+            Reject
           </button>
         </mat-card-actions>
       }
     </mat-card>
+
+    <div class="divider-container">
+      <mat-divider></mat-divider>
+    </div>
+
+    <h5 >
+      Comments
+      <button mat-raised-button color="primary" (click)="openAddCommentDialog()">Add Comment</button>
+    </h5>
+    <app-comment-list [comments]="selectedPost.commentResponseList ?? []"></app-comment-list>
   </div>
 }

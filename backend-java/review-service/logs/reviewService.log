@@ -1,0 +1,65 @@
+2025-01-08T17:36:58.778+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 38676 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:36:58.779+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:36:58.780+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:37:07.040+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.227 seconds (process running for 15.87)
+2025-01-08T17:37:07.201+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:37:07.246+0100 INFO               [main]                         be.pxl.service.controller.ReviewController - User: testUser is not authorized to add a review
+2025-01-08T17:37:07.258+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:37:07.261+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:39:38.272+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 16900 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:39:38.273+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:39:38.274+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:39:47.089+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.812 seconds (process running for 15.933)
+2025-01-08T17:39:47.237+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:39:47.275+0100 INFO               [main]                         be.pxl.service.controller.ReviewController - User: testUser is not authorized to add a review
+2025-01-08T17:39:47.314+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:39:47.325+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:39:47.327+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:39:47.339+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:39:47.339+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:41:53.967+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 16804 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:41:53.967+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:41:53.968+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:42:02.647+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.58 seconds (process running for 16.054)
+2025-01-08T17:42:02.855+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:42:02.895+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:42:02.907+0100 INFO               [main]                         be.pxl.service.controller.ReviewController - User: testUser is not authorized to add a review
+2025-01-08T17:42:02.934+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:42:02.937+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:42:02.964+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:42:02.965+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:43:27.431+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 19696 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:43:27.433+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:43:27.434+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:43:35.802+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.269 seconds (process running for 15.141)
+2025-01-08T17:43:35.946+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:43:35.982+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:43:35.991+0100 INFO               [main]                         be.pxl.service.controller.ReviewController - User: testUser is not authorized to add a review
+2025-01-08T17:48:54.499+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 1580 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:48:54.500+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:48:54.501+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:49:02.740+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.128 seconds (process running for 15.312)
+2025-01-08T17:49:02.859+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:49:02.871+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:50:09.322+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Starting ReviewControllerTests using Java 21.0.2 with PID 3932 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:50:09.323+0100 DEBUG              [main]                         be.pxl.service.controller.ReviewControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:50:09.323+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:50:17.672+0100 INFO               [main]                         be.pxl.service.controller.ReviewControllerTests - Started ReviewControllerTests in 10.366 seconds (process running for 15.35)
+2025-01-08T17:50:17.845+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:50:17.848+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:54:17.600+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - Starting ReviewServiceTests using Java 21.0.2 with PID 21416 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:54:17.602+0100 DEBUG              [main]                         be.pxl.service.services.ReviewServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:54:17.602+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:54:30.078+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - Started ReviewServiceTests in 14.558 seconds (process running for 20.054)
+2025-01-08T17:54:30.418+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:54:30.423+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:58:42.878+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - Starting ReviewServiceTests using Java 21.0.2 with PID 30076 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\review-service)
+2025-01-08T17:58:42.879+0100 DEBUG              [main]                         be.pxl.service.services.ReviewServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-08T17:58:42.880+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T17:58:53.537+0100 INFO               [main]                         be.pxl.service.services.ReviewServiceTests - Started ReviewServiceTests in 12.791 seconds (process running for 18.399)
+2025-01-08T17:58:53.714+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:58:53.717+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:58:53.855+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:58:53.855+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found
+2025-01-08T17:58:53.889+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Finding post with id: 1
+2025-01-08T17:58:53.890+0100 INFO               [main]                         be.pxl.service.services.ReviewService - Post with id: 1 found

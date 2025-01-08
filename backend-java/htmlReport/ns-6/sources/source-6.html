@@ -1,0 +1,89 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > IPostService</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">be.pxl.service.services</a>
+</div>
+
+<h1>Coverage Summary for Class: IPostService (be.pxl.service.services)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">IPostService</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package be.pxl.service.services;
+&nbsp;
+&nbsp;import be.pxl.service.domain.PostStatus;
+&nbsp;import be.pxl.service.domain.dto.request.PostRequest;
+&nbsp;import be.pxl.service.domain.dto.response.PostCommentsResponse;
+&nbsp;import be.pxl.service.domain.dto.response.PostResponse;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;
+&nbsp;public interface IPostService {
+&nbsp;    List&lt;PostResponse&gt; getAllPosts();
+&nbsp;    PostResponse addPost(PostRequest request, String user);
+&nbsp;    PostCommentsResponse getPostById(Long id, String user, String role);
+&nbsp;    List&lt;PostResponse&gt; getPostsByStatus(PostStatus status);
+&nbsp;    PostResponse updatePost(Long id, PostRequest request, String user);
+&nbsp;    PostResponse publishPost(Long id);
+&nbsp;    List&lt;PostResponse&gt; getAllNotPublishedPosts();
+&nbsp;    List&lt;PostCommentsResponse&gt; getPublishedPosts(String user, String role);
+&nbsp;    PostResponse getPostByIdWithoutComments(Long id, String user, String role);
+&nbsp;    }
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-01-08 17:59</div>
+</div>
+</body>
+</html>

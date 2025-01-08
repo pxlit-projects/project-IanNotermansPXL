@@ -3,6 +3,7 @@ package be.pxl.service.controller;
 import be.pxl.service.domain.dto.request.CommentRequest;
 import be.pxl.service.domain.dto.response.CommentResponse;
 import be.pxl.service.exceptions.CommentNotFoundException;
+import be.pxl.service.exceptions.NotYourCommentException;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.services.CommentService;
 import jakarta.ws.rs.NotAuthorizedException;
@@ -39,6 +40,7 @@ public class CommentController {
             return ResponseEntity.notFound().build();
         } catch (Exception e) {
             log.error("An error occurred while getting comments by post id: {}", postId);
+            log.error(String.valueOf(e));
             return ResponseEntity.badRequest().build();
         }
     }
@@ -56,11 +58,12 @@ public class CommentController {
         } catch (CommentNotFoundException e) {
             log.info("Comment with id: {} not found", commentId);
             return ResponseEntity.notFound().build();
-        } catch (NotAuthorizedException e) {
+        } catch (NotYourCommentException e) {
             log.info(String.valueOf(e));
             return ResponseEntity.status(403).build();
         } catch (Exception e) {
             log.error("An error occurred while deleting comment with id: {}", commentId);
+            log.error(String.valueOf(e));
             return ResponseEntity.badRequest().build();
         }
     }
@@ -80,6 +83,7 @@ public class CommentController {
             return ResponseEntity.notFound().build();
         } catch (Exception e) {
             log.error("An error occurred while adding new comment");
+            log.error(String.valueOf(e));
             return ResponseEntity.badRequest().build();
         }
     }
@@ -97,11 +101,12 @@ public class CommentController {
         } catch (CommentNotFoundException e) {
             log.info("Comment to update with id: {} not found", commentId);
             return ResponseEntity.notFound().build();
-        } catch (NotAuthorizedException e) {
+        } catch (NotYourCommentException e) {
             log.info(String.valueOf(e));
             return ResponseEntity.status(403).build();
         } catch (Exception e) {
             log.error("An error occurred while updating comment with id: {}", commentId);
+            log.error(String.valueOf(e));
             return ResponseEntity.badRequest().build();
         }
     }

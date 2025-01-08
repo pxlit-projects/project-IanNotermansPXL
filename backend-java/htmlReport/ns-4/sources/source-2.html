@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Post</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">be.pxl.service.domain</a>
+</div>
+
+<h1>Coverage Summary for Class: Post (be.pxl.service.domain)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">Post$HibernateInstantiator$110pncFP</td>
+  </tr>
+  <tr>
+    <td class="name">Post$HibernateInstantiator$8SYLEWd8</td>
+  </tr>
+  <tr>
+    <td class="name">Post$HibernateInstantiator$TpNdYpHG</td>
+  </tr>
+  <tr>
+    <td class="name">Post$HibernateProxy$AKilD5Vx</td>
+  </tr>
+  <tr>
+    <td class="name">Post$HibernateProxy$cPajLV04</td>
+  </tr>
+  <tr>
+    <td class="name">Post$HibernateProxy$q3E7Kaq6</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package be.pxl.service.domain;
+&nbsp;
+&nbsp;import jakarta.persistence.*;
+&nbsp;import lombok.AllArgsConstructor;
+&nbsp;import lombok.Builder;
+&nbsp;import lombok.Data;
+&nbsp;import lombok.NoArgsConstructor;
+&nbsp;
+&nbsp;import java.time.LocalDateTime;
+&nbsp;
+&nbsp;@Entity
+&nbsp;@Table(name = &quot;posts&quot;)
+&nbsp;@Data
+&nbsp;@Builder
+&nbsp;@NoArgsConstructor
+&nbsp;@AllArgsConstructor
+&nbsp;public class Post {
+&nbsp;    @Id
+&nbsp;    @GeneratedValue(strategy = GenerationType.AUTO)
+&nbsp;    private Long id;
+&nbsp;    private String title;
+&nbsp;    @Column(length = 10000)
+&nbsp;    private String content;
+&nbsp;    private String author;
+&nbsp;    private LocalDateTime createdAt;
+&nbsp;    @Enumerated(EnumType.STRING)
+&nbsp;    private PostStatus status;
+&nbsp;    @Column(nullable = true)
+&nbsp;    private String reviewComment;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-01-08 17:59</div>
+</div>
+</body>
+</html>
