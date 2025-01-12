@@ -17,4 +17,28 @@ Each folder contains its own specific `.gitignore` file.
 
 ## How to setup and run this application
 
-:heavy_check_mark:_(COMMENT) Add setup instructions and provide some direction to run the whole  application: frontend to backend._
+   1. Frontend (Angular)
+
+Install Dependencies: Navigate to the Angular project directory and run:
+
+    npm install
+
+Build the Angular Application:
+
+    ng build
+
+Start Frontend and Databases in Docker: From the root directory (where docker-compose.yml is located), run:
+
+    docker-compose up --build
+
+2. Backend (Spring Boot Microservices)
+
+Start the microservices manually in this order:
+
+    Config Service: Ensure it uses the native profile.
+    Discovery Service
+    Gateway Service
+    Messaging Service
+    Comment Service
+    Review Service
+    Post Service
