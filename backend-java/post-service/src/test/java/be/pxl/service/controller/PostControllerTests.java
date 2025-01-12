@@ -29,13 +29,10 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.time.LocalDateTime;
-import java.util.Collections;
-import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.when;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -84,6 +81,7 @@ public class PostControllerTests {
                 .title("Sample Post")
                 .content("This is a sample post.")
                 .author("testUser")
+                .createdAt(LocalDateTime.now())
                 .status(PostStatus.PUBLISHED)
                 .build();
 
@@ -91,12 +89,14 @@ public class PostControllerTests {
         post.setTitle("Sample Post");
         post.setContent("This is a sample post.");
         post.setAuthor("testUser");
+        post.setCreatedAt(LocalDateTime.now());
         post.setStatus(PostStatus.PUBLISHED);
 
         testPost = new Post();
         testPost.setTitle("Sample Post");
         testPost.setContent("This is a sample post.");
         testPost.setAuthor("testUser");
+        testPost.setCreatedAt(LocalDateTime.now());
         testPost.setStatus(PostStatus.CONCEPT);
     }
 
@@ -124,7 +124,7 @@ public class PostControllerTests {
                         .header("role", "editor")
                         .contentType("application/json")
                         .content(objectMapper.writeValueAsString(postRequest)))
-                .andExpect(status().isOk());
+                .andExpect(status().isCreated());
     }
 
     @Test
@@ -394,7 +394,7 @@ public class PostControllerTests {
 
     @Test
     void updatePost_Returns403_WhenUnauthorizedUserTriesToUpdate() throws Exception {
-        PostRequest postRequest = new PostRequest("Updated Title", "Updated Content", "editorUser", LocalDateTime.now() ,PostStatus.CONCEPT); ;
+        PostRequest postRequest = new PostRequest("Updated Title", "Updated Content", "editorUser",PostStatus.CONCEPT); ;
         postRepository.save(testPost);
 
         mockMvc.perform(put("/api/posts/{id}", testPost.getId())
@@ -446,17 +446,19 @@ public class PostControllerTests {
 
     @Test
     void getPostByIdWithoutComments_ReturnsPost_WhenAuthorized() throws Exception {
-        testPost.setId(1L);
-        postRepository.save(testPost);
+        Post post = new Post();
+        post.setTitle("No Comments Post");
+        post.setContent("Content");
+        post.setAuthor("authorizedUser");
+        postRepository.save(post);
 
-
-
-        mockMvc.perform(get("/api/posts/{id}/without-comments", 1L)
+        mockMvc.perform(get("/api/posts/{id}/without-comments", post.getId())
                         .header("user", "authorizedUser")
                         .header("role", "user"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id").value(1L)); // Adjust based on mock repository setup
+                .andExpect(jsonPath("$.title").value("No Comments Post"));
     }
+
 
     @Test
     void getPostById_Returns403_WhenUnauthorizedRole() throws Exception {
@@ -476,16 +478,18 @@ public class PostControllerTests {
 
     @Test
     void getPostById_ReturnsPost_WhenAuthorized() throws Exception {
-        testPost.setId(1L);
-        postRepository.save(testPost);
+        Post post = new Post();
+        post.setTitle("Sample Post");
+        post.setContent("This is a sample post.");
+        post.setAuthor("authorizedUser");
+        post.setStatus(PostStatus.PUBLISHED);
+        post = postRepository.save(post);
 
-
-
-        mockMvc.perform(get("/api/posts/{id}", 1L)
+        mockMvc.perform(get("/api/posts/{id}", post.getId())
                         .header("user", "authorizedUser")
                         .header("role", "user"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id").value(1L)); // Adjust based on mock repository setup
+                .andExpect(jsonPath("$.title").value("Sample Post"));
     }
 
     @Test
@@ -498,21 +502,36 @@ public class PostControllerTests {
 
     @Test
     void getPublishedPosts_Returns200_WhenRoleIsUser() throws Exception {
+        Post post = new Post();
+        post.setTitle("Published Post");
+        post.setContent("Content");
+        post.setAuthor("editorUser");
+        post.setStatus(PostStatus.PUBLISHED);
+        postRepository.save(post);
+
         mockMvc.perform(get("/api/posts/publishedPosts")
-                        .header("user", "testUser")
-                        .header("role", "user")) // Authorized role
+                        .header("user", "user")
+                        .header("role", "user"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(0)); // Adjust based on actual data
+                .andExpect(jsonPath("$[0].title").value("Published Post"));
     }
 
     @Test
     void getPublishedPosts_Returns200_WhenRoleIsEditor() throws Exception {
+        Post post = new Post();
+        post.setTitle("Published Post");
+        post.setContent("Content");
+        post.setAuthor("editorUser");
+        post.setStatus(PostStatus.PUBLISHED);
+        postRepository.save(post);
+
         mockMvc.perform(get("/api/posts/publishedPosts")
                         .header("user", "testEditor")
-                        .header("role", "editor")) // Authorized role
+                        .header("role", "editor"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(0)); // Adjust based on actual data
+                .andExpect(jsonPath("$[0].title").value("Published Post"));
     }
+
 
     @Test
     void getPublishedPosts_Returns400_WhenHeadersAreMissing() throws Exception {
@@ -530,20 +549,35 @@ public class PostControllerTests {
 
     @Test
     void getPostsByStatus_Returns200_WhenRoleIsUser() throws Exception {
+        Post post = new Post();
+        post.setTitle("Published Post");
+        post.setContent("Content");
+        post.setAuthor("testUser");
+        post.setStatus(PostStatus.PUBLISHED);
+        postRepository.save(post);
+
         mockMvc.perform(get("/api/posts/status/PUBLISHED")
                         .header("user", "testUser")
-                        .header("role", "user")) // Authorized role
+                        .header("role", "user"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(0)); // Adjust based on actual data
+                .andExpect(jsonPath("$[0].title").value("Published Post"));
     }
+
 
     @Test
     void getPostsByStatus_Returns200_WhenRoleIsEditor() throws Exception {
-        mockMvc.perform(get("/api/posts/status/CONCEPT")
-                        .header("user", "testEditor")
-                        .header("role", "editor")) // Authorized role
+        Post post = new Post();
+        post.setTitle("Published Post");
+        post.setContent("Content");
+        post.setAuthor("Editor");
+        post.setStatus(PostStatus.PUBLISHED);
+        postRepository.save(post);
+
+        mockMvc.perform(get("/api/posts/status/PUBLISHED")
+                        .header("user", "Editor")
+                        .header("role", "editor"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(0)); // Adjust based on actual data
+                .andExpect(jsonPath("$[0].title").value("Published Post"));
     }
 
     @Test

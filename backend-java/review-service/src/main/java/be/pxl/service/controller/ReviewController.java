@@ -2,7 +2,7 @@ package be.pxl.service.controller;
 
 import be.pxl.service.domain.dto.request.ReviewRequest;
 import be.pxl.service.exceptions.PostNotFoundException;
-import be.pxl.service.services.ReviewService;
+import be.pxl.service.services.IReviewService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RequestMapping("/api/review")
 public class ReviewController {
-    private final ReviewService reviewService;
+    private final IReviewService reviewService;
     private static final Logger log = LoggerFactory.getLogger(ReviewController.class);
 
 

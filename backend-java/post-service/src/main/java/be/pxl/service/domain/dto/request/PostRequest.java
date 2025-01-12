@@ -16,6 +16,5 @@ public class PostRequest {
     private String title;
     private String content;
     private String author;
-    private LocalDateTime createdAt;
-    private PostStatus status; // CONCEPT, PUBLISHED
+    private PostStatus status;
 }

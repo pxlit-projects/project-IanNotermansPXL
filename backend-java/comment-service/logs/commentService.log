@@ -1,586 +1,130 @@
-2025-01-08T09:28:48.764+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 24016 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:28:48.766+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:28:48.767+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:29:00.310+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 14.09 seconds (process running for 41.199)
-2025-01-08T09:31:36.468+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 11508 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:31:36.469+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:31:36.470+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:31:45.338+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 11.385 seconds (process running for 18.856)
-2025-01-08T09:37:04.989+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 29092 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:37:04.991+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:37:04.992+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:37:13.908+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 11.259 seconds (process running for 18.383)
-2025-01-08T09:38:33.392+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 29056 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:38:33.393+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:38:33.394+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:38:40.116+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.571 seconds (process running for 13.378)
-2025-01-08T09:39:46.031+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 504 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:39:46.032+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:39:46.033+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:39:52.679+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.485 seconds (process running for 13.291)
-2025-01-08T09:42:17.521+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 25956 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:42:17.522+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:42:17.523+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:42:25.059+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.402 seconds (process running for 14.647)
-2025-01-08T09:45:21.675+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 31560 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:45:21.677+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:45:21.677+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:45:28.561+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.803 seconds (process running for 13.661)
-2025-01-08T09:46:50.714+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 18052 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:46:50.715+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:46:50.716+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:46:57.541+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.761 seconds (process running for 13.721)
-2025-01-08T09:48:35.028+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 23748 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:48:35.029+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:48:35.030+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:48:42.582+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.42 seconds (process running for 14.461)
-2025-01-08T09:49:37.354+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 7132 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:49:37.355+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:49:37.356+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:49:44.398+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.897 seconds (process running for 13.859)
-2025-01-08T09:51:22.567+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 24100 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:51:22.568+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:51:22.569+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:51:29.531+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.93 seconds (process running for 14.218)
-2025-01-08T09:52:01.519+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 32972 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T09:52:01.521+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T09:52:01.521+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T09:52:08.612+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.028 seconds (process running for 14.059)
-2025-01-08T10:15:20.309+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 24972 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:15:20.310+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:15:20.311+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:15:27.471+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.089 seconds (process running for 14.104)
-2025-01-08T10:18:18.909+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 4832 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:18:18.911+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:18:18.911+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:18:26.634+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.718 seconds (process running for 14.628)
-2025-01-08T10:19:24.852+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 23872 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:19:24.853+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:19:24.854+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:19:32.011+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.053 seconds (process running for 14.08)
-2025-01-08T10:21:08.393+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 20136 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:21:08.395+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:21:08.395+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:21:15.386+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.886 seconds (process running for 13.865)
-2025-01-08T10:22:37.716+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 38556 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:22:37.717+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:22:37.718+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:22:44.913+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.114 seconds (process running for 14.089)
-2025-01-08T10:24:09.869+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 35132 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:24:09.870+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:24:09.870+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:24:16.949+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.033 seconds (process running for 14.018)
-2025-01-08T10:26:48.628+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 22400 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:26:48.629+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:26:48.630+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:26:55.780+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.028 seconds (process running for 13.781)
-2025-01-08T10:30:10.774+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 33840 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:30:10.775+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:30:10.775+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:30:17.781+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.037 seconds (process running for 13.835)
-2025-01-08T10:32:30.655+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 17576 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:32:30.656+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:32:30.657+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:32:38.026+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.384 seconds (process running for 14.417)
-2025-01-08T10:35:32.572+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 7716 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:35:32.573+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:35:32.574+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:35:39.703+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.066 seconds (process running for 14.467)
-2025-01-08T10:37:05.618+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 37704 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:37:05.619+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:37:05.619+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:37:12.391+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.63 seconds (process running for 13.711)
-2025-01-08T10:37:50.355+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 9524 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:37:50.356+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:37:50.357+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:37:57.353+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.904 seconds (process running for 13.65)
-2025-01-08T10:41:45.031+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 12392 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:41:45.032+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:41:45.033+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:41:52.234+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.056 seconds (process running for 14.172)
-2025-01-08T10:45:15.525+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 20036 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:45:15.526+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:45:15.527+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:45:23.111+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.55 seconds (process running for 15.112)
-2025-01-08T10:47:58.178+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 34724 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:47:58.179+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:47:58.180+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:48:05.298+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.995 seconds (process running for 14.013)
-2025-01-08T10:49:50.825+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 35040 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:49:50.826+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:49:50.827+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:49:57.893+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 8.965 seconds (process running for 14.046)
-2025-01-08T10:50:30.674+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 36568 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:50:30.675+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:50:30.677+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:50:38.168+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.443 seconds (process running for 14.436)
-2025-01-08T10:50:50.204+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 18612 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:50:50.206+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:50:50.207+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:50:57.922+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.619 seconds (process running for 14.684)
-2025-01-08T10:53:30.083+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 33916 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:53:30.084+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:53:30.084+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:53:37.781+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.583 seconds (process running for 14.366)
-2025-01-08T10:53:52.159+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 22088 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T10:53:52.160+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T10:53:52.161+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T10:53:59.957+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.793 seconds (process running for 14.758)
-2025-01-08T11:02:18.198+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 20400 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:02:18.199+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:02:18.200+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:02:27.543+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 11.29 seconds (process running for 16.435)
-2025-01-08T11:02:27.859+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:02:27.994+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:02:28.029+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:02:28.069+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 5
-2025-01-08T11:02:28.073+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while deleting comment with id: 5
-2025-01-08T11:02:28.074+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:02:28.114+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 6
-2025-01-08T11:02:28.119+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 6
-2025-01-08T11:02:28.120+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:02:28.143+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:02:28.168+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:03:40.707+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 16780 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:03:40.708+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:03:40.709+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:03:48.368+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.619 seconds (process running for 14.431)
-2025-01-08T11:03:48.603+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 1
-2025-01-08T11:03:48.614+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:03:48.668+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 2
-2025-01-08T11:03:48.673+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:04:07.481+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 33340 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:04:07.483+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:04:07.483+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:04:15.402+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.764 seconds (process running for 14.882)
-2025-01-08T11:04:19.258+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 33340 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:04:19.258+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:04:19.259+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:04:22.081+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.926 seconds (process running for 21.56)
-2025-01-08T11:04:22.168+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:04:22.242+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:04:22.264+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:04:22.291+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 5
-2025-01-08T11:04:22.295+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:04:22.317+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 6
-2025-01-08T11:04:22.321+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:04:22.336+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:04:22.355+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:08:07.658+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 28492 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:08:07.659+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:08:07.660+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:08:15.591+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.815 seconds (process running for 15.439)
-2025-01-08T11:08:15.891+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:08:16.010+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:08:16.068+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:08:16.070+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:08:16.089+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:08:16.131+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
-2025-01-08T11:08:16.134+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:08:16.165+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 10
-2025-01-08T11:08:16.168+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:08:16.182+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:08:16.196+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:08:16.197+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:08:16.209+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:10:51.344+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 37752 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:10:51.345+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:10:51.346+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:10:59.294+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.867 seconds (process running for 14.804)
-2025-01-08T11:10:59.543+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:10:59.654+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:10:59.681+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:10:59.684+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:10:59.703+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:10:59.704+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:10:59.723+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:10:59.754+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:10:59.791+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
-2025-01-08T11:10:59.795+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:10:59.813+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 9
-2025-01-08T11:10:59.816+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:10:59.835+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 10
-2025-01-08T11:10:59.838+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:10:59.853+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:10:59.867+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:10:59.868+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:10:59.882+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:10:59.921+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:10:59.924+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:10:59.937+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:10:59.939+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:12:10.435+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 17952 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:12:10.436+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:12:10.436+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:12:18.065+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.469 seconds (process running for 14.34)
-2025-01-08T11:12:18.302+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:12:51.057+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 25404 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:12:51.058+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:12:51.059+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:12:59.308+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 10.158 seconds (process running for 14.981)
-2025-01-08T11:13:03.351+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 25404 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:13:03.351+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:13:03.351+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:13:06.173+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.927 seconds (process running for 21.845)
-2025-01-08T11:13:06.259+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:13:06.335+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:13:06.358+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:13:06.362+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:13:06.380+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:13:06.381+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:13:06.399+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:13:06.423+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 7
-2025-01-08T11:13:06.426+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:13:06.446+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T11:13:06.450+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:13:06.467+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 9
-2025-01-08T11:13:06.471+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:13:06.484+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:13:06.496+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:13:06.497+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:13:06.510+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:13:06.529+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:13:06.532+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:13:06.544+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:13:06.547+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:15:33.731+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 17268 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:15:33.732+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:15:33.733+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:15:41.295+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.505 seconds (process running for 14.671)
-2025-01-08T11:15:41.585+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:16:31.637+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 23812 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:16:31.639+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:16:31.639+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:16:39.440+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.724 seconds (process running for 14.49)
-2025-01-08T11:16:39.727+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:16:39.727+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 1
-2025-01-08T11:16:39.728+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:17:02.362+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 17184 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:17:02.363+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:17:02.364+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:17:10.121+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.669 seconds (process running for 14.523)
-2025-01-08T11:17:10.414+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:17:10.415+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 1
-2025-01-08T11:17:10.415+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:17:10.482+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:17:10.552+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:17:10.566+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:17:10.586+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:17:10.587+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:17:10.605+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:17:10.633+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:17:10.633+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:17:10.633+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:17:10.652+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
-2025-01-08T11:17:10.656+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:17:10.676+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 9
-2025-01-08T11:17:10.676+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 9
-2025-01-08T11:17:10.676+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:17:10.700+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 10
-2025-01-08T11:17:10.701+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 10
-2025-01-08T11:17:10.701+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:17:10.722+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:17:10.739+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:17:10.739+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:17:10.755+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:17:10.800+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:17:10.804+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:17:10.822+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:17:10.822+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 999
-2025-01-08T11:17:10.822+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:18:27.787+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 25664 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:18:27.788+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:18:27.789+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:18:35.547+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.63 seconds (process running for 14.88)
-2025-01-08T11:18:39.343+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 25664 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:18:39.343+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:18:39.344+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:18:42.134+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.908 seconds (process running for 21.467)
-2025-01-08T11:18:42.234+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:18:42.311+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:18:42.332+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:18:42.335+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:18:42.353+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:18:42.354+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:18:42.371+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:18:42.395+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:18:42.395+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:18:42.395+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:18:42.413+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
-2025-01-08T11:18:42.416+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:18:42.433+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 9
-2025-01-08T11:18:42.437+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:18:42.455+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 10
-2025-01-08T11:18:42.458+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:18:42.473+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:18:42.486+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:18:42.487+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:18:42.500+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:18:42.524+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:18:42.527+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:18:42.541+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:18:42.544+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:20:32.365+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 34544 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:20:32.366+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:20:32.367+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:20:40.069+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.608 seconds (process running for 14.691)
-2025-01-08T11:20:44.058+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 34544 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:20:44.058+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:20:44.059+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:20:46.837+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.877 seconds (process running for 21.459)
-2025-01-08T11:20:46.936+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:20:47.016+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:20:47.039+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:20:47.043+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:20:47.059+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:20:47.060+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:20:47.076+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:20:47.100+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:20:47.100+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:20:47.100+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:20:47.118+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
-2025-01-08T11:20:47.122+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:20:47.138+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 9
-2025-01-08T11:20:47.142+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:20:47.159+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 10
-2025-01-08T11:20:47.162+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:20:47.174+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:20:47.187+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:20:47.188+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:20:47.199+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:20:47.216+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:20:47.219+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:20:47.230+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:20:47.234+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:24:02.714+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 23000 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:24:02.715+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:24:02.716+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:24:10.840+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 10.116 seconds (process running for 15.312)
-2025-01-08T11:24:11.113+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:24:11.227+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:24:11.254+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:24:11.258+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:24:11.281+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:24:11.282+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:24:11.301+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:24:11.339+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:24:11.378+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T11:24:11.378+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
-2025-01-08T11:24:11.379+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:24:11.399+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
-2025-01-08T11:24:11.404+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:24:11.424+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:24:11.425+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
-2025-01-08T11:24:11.425+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:24:11.451+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
-2025-01-08T11:24:11.473+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 12
-2025-01-08T11:24:11.478+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:24:11.507+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 13
-2025-01-08T11:24:11.544+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 14
-2025-01-08T11:24:11.549+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:24:11.569+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
-2025-01-08T11:24:11.588+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:24:11.606+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:24:11.607+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:24:11.624+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:24:11.678+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:24:11.679+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
-2025-01-08T11:24:11.680+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:24:11.702+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:24:11.707+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:24:11.727+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:24:11.731+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:26:27.459+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 7612 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:26:27.461+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:26:27.462+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:26:35.331+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.763 seconds (process running for 15.004)
-2025-01-08T11:26:39.252+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 7612 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:26:39.252+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:26:39.253+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:26:42.158+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 4.003 seconds (process running for 21.832)
-2025-01-08T11:26:42.242+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:26:42.326+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:26:42.346+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:26:42.349+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:26:42.367+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:26:42.368+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:26:42.389+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:26:42.418+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:26:42.419+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:26:42.419+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:26:42.437+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T11:26:42.438+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
-2025-01-08T11:26:42.438+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:26:42.455+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
-2025-01-08T11:26:42.459+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:26:42.477+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:26:42.478+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
-2025-01-08T11:26:42.479+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:26:42.503+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
-2025-01-08T11:26:42.530+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 12
-2025-01-08T11:26:42.535+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:26:42.561+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
-2025-01-08T11:26:42.565+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:26:42.587+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
-2025-01-08T11:26:42.605+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:26:42.652+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:26:42.653+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:26:42.670+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:26:42.695+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:26:42.696+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
-2025-01-08T11:26:42.696+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:26:42.710+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:26:42.714+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:26:42.730+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:26:42.733+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:31:16.979+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 31668 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:31:16.981+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:31:16.981+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:31:24.714+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 9.612 seconds (process running for 14.841)
-2025-01-08T11:31:24.957+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
-2025-01-08T11:31:38.759+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 22276 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:31:38.761+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:31:38.762+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:31:46.600+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.697 seconds (process running for 14.961)
-2025-01-08T11:31:50.414+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 22276 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:31:50.415+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:31:50.415+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:31:53.115+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.787 seconds (process running for 21.476)
-2025-01-08T11:31:53.223+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:31:53.319+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:31:53.341+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:31:53.344+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:31:53.362+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:31:53.364+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:31:53.380+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:31:53.407+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:31:53.407+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:31:53.407+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:31:53.424+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T11:31:53.424+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
-2025-01-08T11:31:53.424+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:31:53.440+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
-2025-01-08T11:31:53.443+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:31:53.459+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
-2025-01-08T11:31:53.474+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:31:53.475+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
-2025-01-08T11:31:53.475+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:31:53.493+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
-2025-01-08T11:31:53.509+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
-2025-01-08T11:31:53.512+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:31:53.528+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 14
-2025-01-08T11:31:53.531+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:31:53.543+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
-2025-01-08T11:31:53.556+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:31:53.569+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:31:53.569+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:31:53.581+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:31:53.600+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:31:53.600+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
-2025-01-08T11:31:53.600+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:31:53.615+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
-2025-01-08T11:31:53.615+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
-2025-01-08T11:31:53.628+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:31:53.630+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:31:53.643+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:31:53.646+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T11:35:04.204+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 28692 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:35:04.205+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:35:04.206+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:35:11.799+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.54 seconds (process running for 14.609)
-2025-01-08T11:35:15.980+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 28692 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T11:35:15.980+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T11:35:15.980+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T11:35:18.757+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.881 seconds (process running for 21.567)
-2025-01-08T11:35:18.837+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T11:35:18.917+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:35:18.938+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T11:35:18.941+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:35:18.958+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:35:18.958+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T11:35:18.976+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T11:35:19.000+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T11:35:19.000+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T11:35:19.000+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T11:35:19.017+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T11:35:19.017+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
-2025-01-08T11:35:19.017+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T11:35:19.034+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
-2025-01-08T11:35:19.038+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T11:35:19.051+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
-2025-01-08T11:35:19.065+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T11:35:19.066+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
-2025-01-08T11:35:19.066+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:35:19.083+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
-2025-01-08T11:35:19.099+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
-2025-01-08T11:35:19.101+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:35:19.118+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 14
-2025-01-08T11:35:19.121+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T11:35:19.132+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
-2025-01-08T11:35:19.145+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T11:35:19.155+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:35:19.156+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T11:35:19.167+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:35:19.183+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T11:35:19.183+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
-2025-01-08T11:35:19.183+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T11:35:19.194+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
-2025-01-08T11:35:19.195+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
-2025-01-08T11:35:19.206+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T11:35:19.208+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T11:35:19.219+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T11:35:19.222+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
-2025-01-08T15:16:02.670+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 11100 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T15:16:02.671+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T15:16:02.672+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T15:16:10.276+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.59 seconds (process running for 14.857)
-2025-01-08T15:18:35.972+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 14772 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T15:18:35.973+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T15:18:35.974+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T15:18:43.508+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 9.42 seconds (process running for 15.333)
-2025-01-08T17:27:42.306+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 34120 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T17:27:42.308+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T17:27:42.309+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T17:27:52.330+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 12.485 seconds (process running for 20.08)
-2025-01-08T17:27:56.393+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 34120 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
-2025-01-08T17:27:56.393+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
-2025-01-08T17:27:56.394+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-08T17:27:59.204+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.914 seconds (process running for 26.954)
-2025-01-08T17:27:59.339+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
-2025-01-08T17:27:59.476+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T17:27:59.506+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
-2025-01-08T17:27:59.512+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T17:27:59.536+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T17:27:59.537+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
-2025-01-08T17:27:59.557+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
-2025-01-08T17:27:59.584+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
-2025-01-08T17:27:59.584+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
-2025-01-08T17:27:59.584+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Post id cannot be null
-2025-01-08T17:27:59.602+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
-2025-01-08T17:27:59.602+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
-2025-01-08T17:27:59.602+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
-2025-01-08T17:27:59.619+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
-2025-01-08T17:27:59.622+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
-2025-01-08T17:27:59.637+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
-2025-01-08T17:27:59.652+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
-2025-01-08T17:27:59.652+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
-2025-01-08T17:27:59.652+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T17:27:59.670+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
-2025-01-08T17:27:59.687+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
-2025-01-08T17:27:59.690+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T17:27:59.707+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 14
-2025-01-08T17:27:59.712+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
-2025-01-08T17:27:59.726+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
-2025-01-08T17:27:59.739+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
-2025-01-08T17:27:59.754+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T17:27:59.755+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
-2025-01-08T17:27:59.769+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T17:27:59.790+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
-2025-01-08T17:27:59.791+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
-2025-01-08T17:27:59.791+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
-2025-01-08T17:27:59.806+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
-2025-01-08T17:27:59.807+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
-2025-01-08T17:27:59.820+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
-2025-01-08T17:27:59.822+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
-2025-01-08T17:27:59.836+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
-2025-01-08T17:27:59.839+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
+2025-01-12T16:24:29.513+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 20360 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T16:24:29.525+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T16:24:29.527+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T16:24:41.697+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 15.25 seconds (process running for 24.719)
+2025-01-12T16:24:46.639+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 20360 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T16:24:46.639+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T16:24:46.639+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T16:24:49.779+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 4.266 seconds (process running for 32.801)
+2025-01-12T16:24:49.956+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
+2025-01-12T16:24:50.049+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:24:50.212+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
+2025-01-12T16:24:50.216+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T16:24:50.249+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:24:50.250+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
+2025-01-12T16:24:50.290+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
+2025-01-12T16:24:50.341+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
+2025-01-12T16:24:50.373+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 8
+2025-01-12T16:24:50.373+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 8
+2025-01-12T16:24:50.374+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
+2025-01-12T16:24:50.413+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 9
+2025-01-12T16:24:50.423+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T16:24:50.446+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
+2025-01-12T16:24:50.507+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:24:50.508+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
+2025-01-12T16:24:50.508+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T16:24:50.557+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
+2025-01-12T16:24:50.591+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
+2025-01-12T16:24:50.596+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T16:24:50.625+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 14
+2025-01-12T16:24:50.630+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T16:24:50.689+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
+2025-01-12T16:24:50.722+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
+2025-01-12T16:24:50.793+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:24:50.794+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
+2025-01-12T16:24:50.818+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:24:50.856+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:24:50.857+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
+2025-01-12T16:24:50.857+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T16:24:50.887+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
+2025-01-12T16:24:50.888+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
+2025-01-12T16:24:50.911+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
+2025-01-12T16:24:50.917+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
+2025-01-12T16:24:50.943+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
+2025-01-12T16:24:50.948+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
+2025-01-12T16:27:42.621+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 41904 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T16:27:42.624+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T16:27:42.625+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T16:27:54.750+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 15.14 seconds (process running for 24.677)
+2025-01-12T16:27:59.117+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 41904 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T16:27:59.117+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T16:27:59.117+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T16:28:02.201+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 4.229 seconds (process running for 32.129)
+2025-01-12T16:28:02.327+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
+2025-01-12T16:28:02.468+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:28:02.496+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
+2025-01-12T16:28:02.499+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T16:28:02.522+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:28:02.523+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
+2025-01-12T16:28:02.543+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
+2025-01-12T16:28:02.571+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
+2025-01-12T16:28:02.571+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
+2025-01-12T16:28:02.571+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
+2025-01-12T16:28:02.590+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
+2025-01-12T16:28:02.593+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T16:28:02.609+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
+2025-01-12T16:28:02.628+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T16:28:02.629+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
+2025-01-12T16:28:02.629+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T16:28:02.659+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
+2025-01-12T16:28:02.684+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 12
+2025-01-12T16:28:02.688+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T16:28:02.715+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
+2025-01-12T16:28:02.720+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T16:28:02.744+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
+2025-01-12T16:28:02.765+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
+2025-01-12T16:28:02.787+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:28:02.788+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
+2025-01-12T16:28:02.805+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:28:02.830+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T16:28:02.831+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
+2025-01-12T16:28:02.831+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T16:28:02.848+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
+2025-01-12T16:28:02.849+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
+2025-01-12T16:28:02.866+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
+2025-01-12T16:28:02.870+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
+2025-01-12T16:28:02.886+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
+2025-01-12T16:28:02.891+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found
+2025-01-12T17:56:07.434+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Starting CommentServiceTests using Java 21.0.2 with PID 8692 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T17:56:07.435+0100 DEBUG              [main]                         be.pxl.service.services.CommentServiceTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T17:56:07.436+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T17:56:18.039+0100 INFO               [main]                         be.pxl.service.services.CommentServiceTests - Started CommentServiceTests in 13.125 seconds (process running for 21.579)
+2025-01-12T17:56:22.163+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.2 with PID 8692 (started by ianno in C:\Users\ianno\Desktop\PXL_IT\3eJaar\FullstackJava\project\project-IanNotermansPXL\backend-java\comment-service)
+2025-01-12T17:56:22.164+0100 DEBUG              [main]                         be.pxl.service.controller.CommentControllerTests - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-01-12T17:56:22.164+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T17:56:24.931+0100 INFO               [main]                         be.pxl.service.controller.CommentControllerTests - Started CommentControllerTests in 3.876 seconds (process running for 28.472)
+2025-01-12T17:56:25.052+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 1
+2025-01-12T17:56:25.173+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T17:56:25.204+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 4
+2025-01-12T17:56:25.208+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T17:56:25.227+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T17:56:25.228+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 1 not found
+2025-01-12T17:56:25.247+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 6
+2025-01-12T17:56:25.275+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 7
+2025-01-12T17:56:25.275+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while updating comment with id: 7
+2025-01-12T17:56:25.275+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.IllegalArgumentException: Comment text cannot be empty
+2025-01-12T17:56:25.294+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 8
+2025-01-12T17:56:25.298+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot delete a comment that is not yours
+2025-01-12T17:56:25.312+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to delete comment with id: 1
+2025-01-12T17:56:25.326+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Adding new comment
+2025-01-12T17:56:25.326+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while adding new comment
+2025-01-12T17:56:25.326+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T17:56:25.344+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to update a comment
+2025-01-12T17:56:25.361+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 12
+2025-01-12T17:56:25.365+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T17:56:25.383+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 13
+2025-01-12T17:56:25.387+0100 INFO               [main]                         be.pxl.service.controller.CommentController - be.pxl.service.exceptions.NotYourCommentException: You cannot edit a comment that is not yours
+2025-01-12T17:56:25.400+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized to add a comment
+2025-01-12T17:56:25.414+0100 INFO               [main]                         be.pxl.service.controller.CommentController - User: testUser is not authorized get comments
+2025-01-12T17:56:25.429+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T17:56:25.430+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comments not found for post id: 1
+2025-01-12T17:56:25.444+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T17:56:25.466+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 1
+2025-01-12T17:56:25.466+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - An error occurred while getting comments by post id: 1
+2025-01-12T17:56:25.466+0100 ERROR              [main]                         be.pxl.service.controller.CommentController - java.lang.RuntimeException: Unexpected error
+2025-01-12T17:56:25.480+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Getting comments by post id: 999
+2025-01-12T17:56:25.481+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Post with id: 999 not found
+2025-01-12T17:56:25.495+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Deleting comment with id: 999
+2025-01-12T17:56:25.499+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment with id: 999 not found
+2025-01-12T17:56:25.515+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Updating comment with id: 999
+2025-01-12T17:56:25.518+0100 INFO               [main]                         be.pxl.service.controller.CommentController - Comment to update with id: 999 not found

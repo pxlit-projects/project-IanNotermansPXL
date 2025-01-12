@@ -59,7 +59,7 @@ export class ConceptPostListComponent {
   publishPost(post: Post): void {
     if (post.id !== undefined) {
       this.postService.publishPost(post.id).subscribe(() => {
-        this.loadAllPosts();
+        location.reload();
       });
     } else {
       console.error('Post ID is undefined');

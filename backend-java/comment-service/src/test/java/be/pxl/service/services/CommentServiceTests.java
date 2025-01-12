@@ -9,7 +9,6 @@ import be.pxl.service.exceptions.CommentNotFoundException;
 import be.pxl.service.exceptions.NotYourCommentException;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.repository.CommentRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +21,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
-import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
@@ -42,10 +40,6 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
 public class CommentServiceTests {
-    @Autowired
-    MockMvc mockMvc;
-    @Autowired
-    private ObjectMapper objectMapper;
     @Autowired
     private CommentRepository commentRepository;
     @MockBean
@@ -258,18 +252,6 @@ public class CommentServiceTests {
         CommentRequest request = new CommentRequest();
         request.setPostId(comment.getPostId());
         request.setText("");
-        String user = "user1";
-
-        assertThrows(IllegalArgumentException.class, () -> commentService.updateComment(commentId, request, user));
-    }
-
-    @Test
-    void updateComment_ThrowsIllegalArgumentException_WhenPostIdIsNull() {
-        Comment comment = commentRepository.findAll().get(0);
-        Long commentId = comment.getId();
-        CommentRequest request = new CommentRequest();
-        request.setPostId(null);
-        request.setText("Updated Comment");
         String user = "user1";
 
         assertThrows(IllegalArgumentException.class, () -> commentService.updateComment(commentId, request, user));

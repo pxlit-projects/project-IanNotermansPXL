@@ -23,5 +23,6 @@ public class PostCommentsResponse {
     @Enumerated(EnumType.STRING)
     private PostStatus status;
     private LocalDateTime createdAt;
+    private String reviewComment;
     private List<CommentResponse> commentResponseList;
 }

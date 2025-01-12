@@ -92,9 +92,6 @@ public class CommentService implements ICommentService {
         if (request.getText() == null || request.getText().isEmpty()){
             throw new IllegalArgumentException("Comment text cannot be empty");
         }
-        if(request.getPostId() == null){
-            throw new IllegalArgumentException("Post id cannot be null");
-        }
         if(user == null || user.isEmpty()){
             throw new IllegalArgumentException("User cannot be empty");
         }

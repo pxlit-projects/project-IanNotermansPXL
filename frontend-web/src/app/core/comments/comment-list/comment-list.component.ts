@@ -32,8 +32,6 @@ export class CommentListComponent {
   currentUser: string | undefined = this.authService.currentUser?.username;
   private dialog: MatDialog = inject(MatDialog);
 
-
-
   deleteComment(commentId: number | undefined): void {
     if (commentId != null) {
       this.commentService.deleteComment(commentId).subscribe(() => {
