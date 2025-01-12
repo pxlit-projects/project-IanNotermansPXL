@@ -1,7 +1,6 @@
 package be.pxl.service.controller;
 
 import be.pxl.service.client.PostClient;
-import be.pxl.service.domain.Review;
 import be.pxl.service.domain.dto.request.ReviewRequest;
 import be.pxl.service.domain.dto.response.PostResponse;
 import be.pxl.service.exceptions.PostNotFoundException;
@@ -90,8 +89,6 @@ public class ReviewControllerTests {
                         .content(objectMapper.writeValueAsString(reviewRequest)))
                 .andExpect(status().isNotFound());
     }
-
-
 
     @Test
     void addReview_Returns400_WhenUnexpectedExceptionOccurs() throws Exception {

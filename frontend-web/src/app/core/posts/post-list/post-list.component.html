@@ -23,7 +23,7 @@
           <mat-card-subtitle>Author: {{ post.author }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-actions class="post-actions">
-          @if (authService.currentUser?.role === 'editor') {
+          @if (authService.currentUser?.role === 'editor' && post.status === 'CONCEPT' || post.status === 'REJECTED') {
             <button mat-button color="primary" (click)="editPost(post)">Edit Post</button>
           }
           <button mat-button color="primary" [routerLink]="['/posts', post.id]">Read More</button>

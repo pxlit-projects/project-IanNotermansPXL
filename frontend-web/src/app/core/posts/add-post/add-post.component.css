@@ -25,3 +25,9 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.disclaimer {
+  margin-top: 4px;
+  color: gray;
+  font-size: 0.85rem;
+}

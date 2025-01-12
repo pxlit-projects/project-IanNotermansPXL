@@ -31,7 +31,7 @@ export class AddCommentDialogComponent {
     if (this.commentText.trim()) {
       const request = {
         postId: this.data.postId,
-        text: this.commentText,
+        text: this.commentText.trim(),
       };
 
       this.commentService.addComment(request).subscribe(() => {

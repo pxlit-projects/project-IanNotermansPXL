@@ -36,7 +36,7 @@ export class CommentService {
 
   updateComment(commentId: number, text: string): Observable<Comment> {
     const headers = this.createHeaders();
-    const body = { text }; // Wrap text in an object
+    const body = { text };
     return this.http
       .put<Comment>(`${this.baseUrl}/${commentId}`, body, { headers })
       .pipe(catchError(this.handleError));

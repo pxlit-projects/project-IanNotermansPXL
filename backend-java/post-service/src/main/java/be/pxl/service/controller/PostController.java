@@ -13,7 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -64,7 +66,13 @@ public class PostController {
             }
             log.info("Adding new post");
             PostResponse postResponse = postService.addPost(request, user);
-            return ResponseEntity.ok(postResponse);
+            URI location = ServletUriComponentsBuilder
+                    .fromCurrentRequest()
+                    .path("/{id}")
+                    .buildAndExpand(postResponse.getId())
+                    .toUri();
+
+            return ResponseEntity.created(location).body(postResponse);
         } catch (Exception e) {
             log.error(String.valueOf(e));
             return ResponseEntity.badRequest().build();

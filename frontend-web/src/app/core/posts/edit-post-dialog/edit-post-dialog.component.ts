@@ -42,7 +42,6 @@ export class EditPostDialogComponent {
     });
   }
 
-
   save(): void {
     if (this.editPostForm.valid) {
       this.dialogRef.close(this.editPostForm.value);

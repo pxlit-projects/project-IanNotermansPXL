@@ -92,7 +92,6 @@ public class PostServiceTests {
         PostRequest request = new PostRequest();
         request.setTitle("New Post");
         request.setContent("New Content");
-        request.setCreatedAt(LocalDateTime.now());
         request.setStatus(PostStatus.CONCEPT);
 
         PostResponse response = postService.addPost(request, "testUser");
@@ -146,7 +145,6 @@ public class PostServiceTests {
         PostRequest request = new PostRequest();
         request.setTitle("Updated Title");
         request.setContent("Updated Content");
-        request.setCreatedAt(post.getCreatedAt());
         request.setStatus(PostStatus.CONCEPT);
 
         PostResponse response = postService.updatePost(post.getId(), request, "testUser");

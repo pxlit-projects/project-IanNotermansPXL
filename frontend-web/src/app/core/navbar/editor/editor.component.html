@@ -1,8 +1,9 @@
 <mat-toolbar color="accent">
   <span>PostService</span>
   <span class="spacer"></span>
-  <button mat-button [routerLink]="['/posts']">Posts</button>
-  <button mat-button [routerLink]="['/add-post']">Add Post</button>
-  <button mat-button [routerLink]="['/concepts']">Concepts</button>
-  <button mat-button (click)="logout()">Logout</button>
+  <button mat-button [routerLink]="['/posts']" id="posts-button">Posts</button>
+  <button mat-button [routerLink]="['/add-post']" id="add-post-button">Add Post</button>
+  <button mat-button [routerLink]="['/concepts']"id="concepts-button">Concepts</button>
+  <button mat-button (click)="logout()" id="logout-button">Logout</button>
+
 </mat-toolbar>

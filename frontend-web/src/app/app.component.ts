@@ -15,6 +15,7 @@ import {AuthService} from "./shared/services/auth.service";
 
 })
 export class AppComponent {
+  title = 'PostApp';
   currentUser: User | null = null;
   authService: AuthService = inject(AuthService);
 

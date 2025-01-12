@@ -19,6 +19,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -50,7 +51,7 @@ public class PostService implements IPostService {
         post.setTitle(request.getTitle());
         post.setContent(request.getContent());
         post.setAuthor(user);
-        post.setCreatedAt(request.getCreatedAt());
+        post.setCreatedAt(LocalDateTime.now());
         post.setStatus(request.getStatus());
 
         Post savedPost = postRepository.save(post);
@@ -136,7 +137,7 @@ public class PostService implements IPostService {
 
         post.setTitle(request.getTitle());
         post.setContent(request.getContent());
-        post.setCreatedAt(request.getCreatedAt());
+        post.setCreatedAt(LocalDateTime.now());
         post.setStatus(PostStatus.CONCEPT);
 
         Post updatedPost = postRepository.save(post);
@@ -207,6 +208,7 @@ public class PostService implements IPostService {
                 .createdAt(post.getCreatedAt())
                 .status(post.getStatus())
                 .commentResponseList(comments)
+                .reviewComment(post.getReviewComment())
                 .build();
     }
 }

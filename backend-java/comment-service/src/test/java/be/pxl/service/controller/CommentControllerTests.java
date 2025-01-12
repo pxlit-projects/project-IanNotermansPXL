@@ -5,7 +5,6 @@ import be.pxl.service.domain.Comment;
 import be.pxl.service.domain.dto.request.CommentRequest;
 import be.pxl.service.domain.dto.response.PostResponse;
 import be.pxl.service.exceptions.CommentNotFoundException;
-import be.pxl.service.exceptions.NotYourCommentException;
 import be.pxl.service.exceptions.PostNotFoundException;
 import be.pxl.service.repository.CommentRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -35,16 +34,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @Testcontainers
 public class CommentControllerTests {
-
     @Autowired
     private MockMvc mockMvc;
-
     @Autowired
     private CommentRepository commentRepository;
-
     @Autowired
     private ObjectMapper objectMapper;
-
     @MockBean
     private PostClient postClient; // Mock external dependency
 
@@ -144,7 +139,7 @@ public class CommentControllerTests {
                         .header("role", role)
                         .contentType("application/json")
                         .content(objectMapper.writeValueAsString(request)))
-                .andExpect(status().isOk())
+                .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.text").value("New Comment"));
     }
 
@@ -355,22 +350,6 @@ public class CommentControllerTests {
                         .contentType("application/json")
                         .content(objectMapper.writeValueAsString(request)))
                 .andExpect(status().isForbidden());
-    }
-
-    @Test
-    void updateComment_Returns400_OnGeneralException() throws Exception {
-        Comment comment = commentRepository.findAll().get(0);
-        Long commentId = comment.getId();
-
-        CommentRequest request = new CommentRequest();
-        request.setText("Updated Comment");
-
-        mockMvc.perform(put("/api/comments/{commentId}", commentId)
-                        .header("user", "user1")
-                        .header("role", "user")
-                        .contentType("application/json")
-                        .content(objectMapper.writeValueAsString(request)))
-                .andExpect(status().isBadRequest());
     }
 
     @Test

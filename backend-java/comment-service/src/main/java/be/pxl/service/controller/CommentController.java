@@ -12,7 +12,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -77,7 +79,13 @@ public class CommentController {
             }
             log.info("Adding new comment");
             CommentResponse commentResponse = commentService.addComment(request, user, role);
-            return ResponseEntity.ok(commentResponse);
+            URI location = ServletUriComponentsBuilder
+                    .fromCurrentRequest()
+                    .path("/{id}")
+                    .buildAndExpand(commentResponse.getId())
+                    .toUri();
+
+            return ResponseEntity.created(location).body(commentResponse);
         } catch (PostNotFoundException e) {
             log.info("Post with id: {} not found", request.getPostId());
             return ResponseEntity.notFound().build();
