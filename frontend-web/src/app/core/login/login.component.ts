@@ -6,7 +6,7 @@ import { MatOption } from '@angular/material/core';
 import { MatFormField, MatLabel, MatSelect } from '@angular/material/select';
 import { MatButton } from '@angular/material/button';
 import { MatInput } from '@angular/material/input';
-import {NgIf} from "@angular/common";
+
 import {MatError} from "@angular/material/form-field";
 
 @Component({
@@ -22,36 +22,40 @@ import {MatError} from "@angular/material/form-field";
           name="username"
           required
           #usernameInput="ngModel"
-        />
-        <mat-error *ngIf="usernameInput.invalid && usernameInput.touched">
-          Username is required.
-        </mat-error>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Role</mat-label>
-        <mat-select
-          [(ngModel)]="role"
-          name="role"
-          required
-          #roleInput="ngModel"
-        >
-          <mat-option value="editor">Editor</mat-option>
-          <mat-option value="user">User</mat-option>
-        </mat-select>
-        <mat-error *ngIf="roleInput.invalid && roleInput.touched">
-          Role is required.
-        </mat-error>
-      </mat-form-field>
-      <button
-        mat-raised-button
-        color="primary"
-        type="submit"
-        [disabled]="loginForm.invalid"
-      >
-        Login
-      </button>
-    </form>
-  `,
+          />
+          @if (usernameInput.invalid && usernameInput.touched) {
+            <mat-error>
+              Username is required.
+            </mat-error>
+          }
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Role</mat-label>
+          <mat-select
+            [(ngModel)]="role"
+            name="role"
+            required
+            #roleInput="ngModel"
+            >
+            <mat-option value="editor">Editor</mat-option>
+            <mat-option value="user">User</mat-option>
+          </mat-select>
+          @if (roleInput.invalid && roleInput.touched) {
+            <mat-error>
+              Role is required.
+            </mat-error>
+          }
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="loginForm.invalid"
+          >
+          Login
+        </button>
+      </form>
+    `,
   styles: [
     `
       .login-form {
@@ -77,9 +81,8 @@ import {MatError} from "@angular/material/form-field";
     MatFormField,
     MatButton,
     MatInput,
-    NgIf,
     MatError
-  ],
+],
   standalone: true,
 })
 export class LoginComponent {
